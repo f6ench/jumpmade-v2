@@ -1,0 +1,41 @@
+{
+  "total": 296,
+  "mobiles": 54,
+  "emails": 0,
+  "websites": 53,
+  "chMatches": 87,
+  "crossPlatformMatches": 68,
+  "dissolved": 2,
+  "fitTiers": {
+    "A": 0,
+    "B": 153,
+    "C": 91,
+    "D": 50
+  },
+  "sizeCats": {
+    "Solo": 167,
+    "Small": 92,
+    "Established": 30,
+    "Large": 5
+  },
+  "phoneSources": {
+    "cross_platform": 54
+  },
+  "websiteSources": {
+    "cross_platform": 53
+  },
+  "nameSources": {
+    "checkatrade": 174,
+    "companies_house": 87
+  },
+  "landlines": 0,
+  "socials": 0,
+  "bookings": 0,
+  "chats": 0,
+  "competitorToolLeads": 0,
+  "painSignalLeads": 33,
+  "multiPlatform": 68,
+  "tradeSlug": "landscaper",
+  "lastIndex": 591,
+  "timestamp": "2026-03-15T10:50:40.501Z"
+}

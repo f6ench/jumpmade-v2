@@ -1,0 +1,39 @@
+{
+  "started": "2026-03-16T10:22:45.183Z",
+  "completed": [
+    "plumber",
+    "builder",
+    "gas-boiler",
+    "locksmith",
+    "cleaner",
+    "garage-conversion",
+    "garden-maintenance",
+    "laminate-flooring",
+    "porch-specialists",
+    "wooden-decking",
+    "carpet-laying"
+  ],
+  "failed": [
+    "bathroom",
+    "plasterers-renderers",
+    "fencing-and-gates",
+    "flooring",
+    "extension",
+    "gas-ovens-and-hob",
+    "staircases-wooden"
+  ],
+  "counts": {
+    "builder": 830,
+    "gas-boiler": 617,
+    "locksmith": 193,
+    "cleaner": 455,
+    "garage-conversion": 936,
+    "garden-maintenance": 808,
+    "laminate-flooring": 562,
+    "porch-specialists": 826,
+    "wooden-decking": 815,
+    "carpet-laying": 222
+  },
+  "current": null,
+  "remaining": 0
+}

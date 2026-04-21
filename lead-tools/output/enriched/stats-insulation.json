@@ -1,0 +1,41 @@
+{
+  "total": 48,
+  "mobiles": 5,
+  "emails": 0,
+  "websites": 5,
+  "chMatches": 28,
+  "crossPlatformMatches": 5,
+  "dissolved": 0,
+  "fitTiers": {
+    "A": 0,
+    "B": 36,
+    "C": 12,
+    "D": 0
+  },
+  "sizeCats": {
+    "Solo": 16,
+    "Small": 17,
+    "Established": 14,
+    "Large": 1
+  },
+  "phoneSources": {
+    "cross_platform": 5
+  },
+  "websiteSources": {
+    "cross_platform": 5
+  },
+  "nameSources": {
+    "checkatrade": 20,
+    "companies_house": 28
+  },
+  "landlines": 0,
+  "socials": 0,
+  "bookings": 0,
+  "chats": 0,
+  "competitorToolLeads": 0,
+  "painSignalLeads": 16,
+  "multiPlatform": 5,
+  "tradeSlug": "insulation",
+  "lastIndex": 96,
+  "timestamp": "2026-03-15T19:54:18.625Z"
+}

@@ -1,0 +1,37 @@
+{
+  "started": "2026-03-16T10:05:42.640Z",
+  "completed": [
+    "plumber",
+    "roofer",
+    "heating-engineer",
+    "tiler",
+    "bricklayer",
+    "garden-clearance",
+    "gardener",
+    "locksmith",
+    "handyman",
+    "pebble-dashing",
+    "carpet-laying"
+  ],
+  "failed": [
+    "painters-decorators",
+    "driveway",
+    "windows-conservatories",
+    "chimney-building-and-repair",
+    "fascias-and-soffits-and-cladding-upvc",
+    "bathroom",
+    "flooring",
+    "garage-and-outbuilding-construction",
+    "gas-ovens-and-hob",
+    "tarmacing-a-driveway"
+  ],
+  "counts": {
+    "roofer": 618,
+    "heating-engineer": 627,
+    "tiler": 662,
+    "bricklayer": 618,
+    "garden-clearance": 788
+  },
+  "current": null,
+  "remaining": 0
+}

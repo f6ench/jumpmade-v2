@@ -1,0 +1,41 @@
+{
+  "total": 36,
+  "mobiles": 5,
+  "emails": 0,
+  "websites": 5,
+  "chMatches": 15,
+  "crossPlatformMatches": 5,
+  "dissolved": 0,
+  "fitTiers": {
+    "A": 0,
+    "B": 21,
+    "C": 13,
+    "D": 2
+  },
+  "sizeCats": {
+    "Solo": 17,
+    "Small": 12,
+    "Established": 7,
+    "Large": 0
+  },
+  "phoneSources": {
+    "cross_platform": 5
+  },
+  "websiteSources": {
+    "cross_platform": 5
+  },
+  "nameSources": {
+    "companies_house": 15,
+    "checkatrade": 21
+  },
+  "landlines": 0,
+  "socials": 0,
+  "bookings": 0,
+  "chats": 0,
+  "competitorToolLeads": 0,
+  "painSignalLeads": 5,
+  "multiPlatform": 5,
+  "tradeSlug": "groundwork",
+  "lastIndex": 71,
+  "timestamp": "2026-03-15T19:26:03.181Z"
+}

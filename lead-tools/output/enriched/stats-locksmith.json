@@ -1,0 +1,41 @@
+{
+  "total": 177,
+  "mobiles": 43,
+  "emails": 0,
+  "websites": 43,
+  "chMatches": 40,
+  "crossPlatformMatches": 43,
+  "dissolved": 1,
+  "fitTiers": {
+    "A": 0,
+    "B": 86,
+    "C": 28,
+    "D": 62
+  },
+  "sizeCats": {
+    "Solo": 99,
+    "Small": 40,
+    "Established": 33,
+    "Large": 4
+  },
+  "phoneSources": {
+    "cross_platform": 43
+  },
+  "websiteSources": {
+    "cross_platform": 43
+  },
+  "nameSources": {
+    "checkatrade": 82,
+    "companies_house": 40
+  },
+  "landlines": 0,
+  "socials": 0,
+  "bookings": 0,
+  "chats": 0,
+  "competitorToolLeads": 0,
+  "painSignalLeads": 16,
+  "multiPlatform": 43,
+  "tradeSlug": "locksmith",
+  "lastIndex": 354,
+  "timestamp": "2026-03-15T19:04:59.170Z"
+}

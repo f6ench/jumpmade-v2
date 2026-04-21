@@ -1,0 +1,47 @@
+{
+  "total": 374,
+  "mobiles": 128,
+  "emails": 129,
+  "websites": 264,
+  "chMatches": 147,
+  "crossPlatformMatches": 86,
+  "dissolved": 1,
+  "fitTiers": {
+    "A": 0,
+    "B": 278,
+    "C": 85,
+    "D": 10
+  },
+  "sizeCats": {
+    "Solo": 128,
+    "Small": 137,
+    "Established": 78,
+    "Large": 30
+  },
+  "phoneSources": {
+    "cross_platform": 71,
+    "website": 26,
+    "website_via_search": 31,
+    "google_maps": 1
+  },
+  "websiteSources": {
+    "search_engine": 116,
+    "cross_platform": 71,
+    "checkatrade_profile": 77
+  },
+  "nameSources": {
+    "companies_house": 147,
+    "checkatrade": 211,
+    "website": 6
+  },
+  "landlines": 72,
+  "socials": 92,
+  "bookings": 0,
+  "chats": 15,
+  "competitorToolLeads": 0,
+  "painSignalLeads": 44,
+  "multiPlatform": 86,
+  "tradeSlug": "kitchen",
+  "lastIndex": 748,
+  "timestamp": "2026-03-16T16:20:34.679Z"
+}

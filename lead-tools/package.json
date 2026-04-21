@@ -1,0 +1,19 @@
+{
+  "name": "lead-tools",
+  "version": "1.0.0",
+  "description": "Checkatrade scraper and lead enrichment tools",
+  "scripts": {
+    "scrape": "node scrape-checkatrade.js",
+    "enrich": "node enrich-leads.js",
+    "scrape-all": "node scrape-all-trades.js --skip-existing"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cheerio": "^1.2.0",
+    "csv-parse": "^5.5.0",
+    "csv-stringify": "^6.4.0",
+    "puppeteer": "^24.37.5",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  }
+}

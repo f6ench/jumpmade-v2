@@ -1,0 +1,39 @@
+{
+  "total": 250,
+  "mobiles": 0,
+  "emails": 0,
+  "websites": 77,
+  "chMatches": 113,
+  "crossPlatformMatches": 137,
+  "dissolved": 5,
+  "fitTiers": {
+    "A": 0,
+    "B": 1,
+    "C": 179,
+    "D": 65
+  },
+  "sizeCats": {
+    "Solo": 164,
+    "Small": 80,
+    "Established": 1,
+    "Large": 0
+  },
+  "phoneSources": {},
+  "websiteSources": {
+    "cross_platform": 77
+  },
+  "nameSources": {
+    "companies_house": 112,
+    "checkatrade": 133
+  },
+  "landlines": 0,
+  "socials": 0,
+  "bookings": 0,
+  "chats": 0,
+  "competitorToolLeads": 0,
+  "painSignalLeads": 56,
+  "multiPlatform": 135,
+  "tradeSlug": "bathroom",
+  "lastIndex": 249,
+  "timestamp": "2026-03-27T13:59:43.236Z"
+}

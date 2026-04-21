@@ -1,0 +1,38 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+logs/
+
+# Build
+dist/
+build/
+.cache/
+
+# Secrets
+*.pem
+*.key
+credentials.json
+
+# Large binary / scratch
+*.pptx.tmp
+*.xlsx.tmp
+playwright-state/

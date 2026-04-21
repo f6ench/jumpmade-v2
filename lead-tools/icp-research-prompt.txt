@@ -1,0 +1,76 @@
+# ICP Research Task — Sniper OS
+
+You are researching the ideal customer profile (ICP) for Sniper OS, an automated lead-claiming tool for UK tradesmen. Your goal is to find WHERE our best prospects hang out online and WHAT language they use to describe their pain.
+
+## Our ICP
+- Solo or small team tradesman (1-5 people) in the UK
+- Already paying for lead platforms (Checkatrade, MyBuilder, Bark, Rated People, Trustmark)
+- Losing leads because they respond too slowly (on the tools, phone in the van)
+- Not using automation tools (no Jobber, ServiceM8, Housecall Pro, Tradify)
+- Revenue roughly 30k-100k — big enough to need leads, small enough to not have admin staff
+- Trades: plumbers, electricians, heating engineers, boiler engineers, gas engineers, locksmiths, drainage, roofers
+
+## Research Tasks
+
+### 1. Platform Mapping
+Search each of these platforms and rate them 1-10 for density of our ICP:
+
+**Reddit:**
+- r/DIYUK, r/Plumbing, r/PlumbersUK, r/smallbusinessuk, r/EntrepreneurUK, r/UKPersonalFinance
+- Search terms: checkatrade, mybuilder, bark, rated people, lead platform, missed leads, too slow, speed to lead, waste of money, cant respond, on the tools
+
+**Forums:**
+- ukplumbersforums.co.uk
+- screwfix community forum
+- diynot.com/forums
+- moneysavingexpert.com/forums (tradesman threads)
+- buildhub.org.uk
+
+**Social Media:**
+- Facebook groups: search for UK plumber groups, tradesman groups, Checkatrade users group, small business UK
+- LinkedIn: search for UK plumber, electrician, heating engineer — look at posts complaining about leads
+- Twitter/X: search checkatrade + frustrated/waste/expensive/slow
+
+**Review Sites:**
+- Trustpilot reviews OF Checkatrade, MyBuilder, Bark, Rated People
+- Google reviews of same platforms
+
+**YouTube:**
+- Search checkatrade review, is checkatrade worth it, mybuilder review — find tradesmen who made videos about their experience
+
+### 2. Pain Language Mapping
+For each platform where you find our ICP, collect the EXACT phrases they use. We need their actual words for SMS copy and DM openers. Categorise by pain:
+
+- **Speed pain:** phrases about being too slow, missing leads, fastest finger
+- **Cost pain:** phrases about fees, credits, waste of money, ROI
+- **Availability pain:** phrases about being on a job, cant check phone, missed calls
+- **Quality pain:** phrases about tyre kickers, time wasters, bad leads
+- **Competition pain:** phrases about too many tradesmen, race to respond
+
+### 3. High-Intent Signals
+Identify which signals indicate someone is MOST likely to buy Sniper OS:
+- Recently posted about leaving Checkatrade (but hasnt yet)
+- Comparing lead platforms (shopping around = open to new tools)
+- Asking how to get more leads (problem-aware, solution-seeking)
+- Complaining about response speed specifically (our exact value prop)
+- Posting about being a one-man band and overwhelmed
+
+### 4. Anti-Signals (Who NOT to target)
+- Large firms with office staff / PA
+- Tradesmen who have already left all lead platforms
+- People using competitor automation (Jobber, ServiceM8 etc)
+- Hobbyists / part-time tradesmen
+- Outside UK
+
+### Output
+Save a comprehensive report to ~/workspace/reports/icp-research-report.md with:
+
+1. **Platform Scorecard** — each platform rated 1-10 with notes
+2. **Top 5 Hunting Grounds** — where to spend most time
+3. **Pain Language Bank** — exact quotes organised by pain category
+4. **High-Intent Signal List** — what to look for when screening prospects
+5. **Anti-Signal List** — red flags to skip
+6. **Recommended Search Queries** — best performing search terms per platform
+7. **Sample Prospects** — 10-15 real examples found during research with URLs
+
+Be thorough. Check every platform listed. Use real search results, not hypotheticals.

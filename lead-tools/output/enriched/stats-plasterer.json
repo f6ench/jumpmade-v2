@@ -1,0 +1,41 @@
+{
+  "total": 542,
+  "mobiles": 205,
+  "emails": 0,
+  "websites": 202,
+  "chMatches": 74,
+  "crossPlatformMatches": 214,
+  "dissolved": 2,
+  "fitTiers": {
+    "A": 0,
+    "B": 332,
+    "C": 162,
+    "D": 46
+  },
+  "sizeCats": {
+    "Solo": 307,
+    "Small": 168,
+    "Established": 63,
+    "Large": 2
+  },
+  "phoneSources": {
+    "cross_platform": 205
+  },
+  "websiteSources": {
+    "cross_platform": 202
+  },
+  "nameSources": {
+    "checkatrade": 435,
+    "companies_house": 74
+  },
+  "landlines": 0,
+  "socials": 0,
+  "bookings": 0,
+  "chats": 0,
+  "competitorToolLeads": 0,
+  "painSignalLeads": 24,
+  "multiPlatform": 214,
+  "tradeSlug": "plasterer",
+  "lastIndex": 1083,
+  "timestamp": "2026-03-15T15:49:25.870Z"
+}

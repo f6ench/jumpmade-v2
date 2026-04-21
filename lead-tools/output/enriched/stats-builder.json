@@ -1,0 +1,45 @@
+{
+  "total": 25,
+  "mobiles": 12,
+  "emails": 11,
+  "websites": 19,
+  "chMatches": 19,
+  "crossPlatformMatches": 13,
+  "dissolved": 0,
+  "fitTiers": {
+    "A": 0,
+    "B": 15,
+    "C": 8,
+    "D": 2
+  },
+  "sizeCats": {
+    "Solo": 6,
+    "Small": 15,
+    "Established": 3,
+    "Large": 1
+  },
+  "phoneSources": {
+    "cross_platform": 8,
+    "website_via_search": 1,
+    "website": 3
+  },
+  "websiteSources": {
+    "cross_platform": 8,
+    "checkatrade_profile": 7,
+    "search_engine": 4
+  },
+  "nameSources": {
+    "companies_house": 19,
+    "checkatrade": 6
+  },
+  "landlines": 7,
+  "socials": 10,
+  "bookings": 0,
+  "chats": 0,
+  "competitorToolLeads": 0,
+  "painSignalLeads": 4,
+  "multiPlatform": 13,
+  "tradeSlug": "builder",
+  "lastIndex": 24,
+  "timestamp": "2026-03-16T16:36:39.891Z"
+}
