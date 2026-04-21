@@ -9,9 +9,10 @@ Per V2 charter — the external human who receives Monday metrics by 10am every 
 | Field | Value |
 |---|---|
 | Name | Seyi Olofintila |
-| Email | seyiolofintila23@gmail.com |
+| Primary contact | WhatsApp: +44 7577 990950 |
+| Secondary contact | Email: seyiolofintila23@gmail.com |
 | Relationship | Entrepreneurial peer / founder friend |
-| Role | Receives the weekly Monday metrics email by 10am every Monday. Expected to reply with challenge questions when numbers look off or the email doesn't land on time. |
+| Role | Receives the weekly Monday metrics via WhatsApp by 10am every Monday. Expected to reply with challenge questions when numbers look off or the message doesn't land on time. |
 | Cadence | Weekly, every Monday by 10:00 |
 | Status | **Pending confirmation** — awaiting Seyi's yes to the ask |
 | Asked on | [YYYY-MM-DD — fill when sent] |
