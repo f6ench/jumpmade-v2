@@ -14,10 +14,10 @@ Per V2 charter — the external human who receives Monday metrics by 10am every 
 | Relationship | Entrepreneurial peer / founder friend |
 | Role | Receives the weekly Monday metrics via WhatsApp by 10am every Monday. Expected to reply with challenge questions when numbers look off or the message doesn't land on time. |
 | Cadence | Weekly, every Monday by 10:00 |
-| Status | **Pending confirmation** — awaiting Seyi's yes to the ask |
-| Asked on | [YYYY-MM-DD — fill when sent] |
-| Confirmed on | [YYYY-MM-DD — fill when accepted] |
-| First metrics send | Week commencing 2026-04-27 (first Monday after split, if confirmed in time) |
+| Status | **Confirmed — active** |
+| Asked on | 2026-04-21 |
+| Confirmed on | 2026-04-21 |
+| First metrics send | Monday 2026-04-27 by 10:00 (non-negotiable) |
 
 ## Secondary — Daily presence layer (not the metrics partner)
 
