@@ -1,110 +1,101 @@
 # Decision — V2 Named Mechanism
 
-**Date:** 2026-04-21 (Day 3 of V2 — closed 5 days ahead of charter Day 7 deadline)
-**Status:** LOCKED
+**Date:** 2026-04-21 (Day 3 of V2)
+**Status:** DEFERRED (superseded; see history below)
 **Owner:** Joseph French
-**Next review:** 2026-06-16 (first strategic review point, per Override #1)
+**Next review:** when customer #1 organically describes the mechanism in their own words, OR 2026-06-16 strategic review, whichever arrives first
 
 ---
 
 ## The decision
 
-The V2 named mechanism is **First Quote System**.
+**The V2 named mechanism is deliberately deferred.** Jumpmade will ship V2 under its existing parent-company brand with no sub-mechanism name. Positioning is carried by partnership framing and the locked offer, not by a methodology label.
 
-Used in every piece of outreach, every pitch, every landing page, every email, every voicemail from Day 3 onwards.
-
----
-
-## Why First Quote System
-
-**It names a real buyer behaviour, not a feature.** UK homeowners habitually get three quotes before hiring a tradesperson — and the first plumber to reply usually wins the job. That pattern is known to every working plumber. The name teaches the offer in two words: *"I get you the first quote in."*
-
-**It survives the voicemail test.** *"Hi — I install First Quote System for UK plumbers. When a homeowner posts a job, your quote lands first. Call me back."* That is a coherent 15-second pitch a plumber completes for you before you finish the sentence.
-
-**It is ownable.** Three Google searches on 2026-04-21 returned zero exact-phrase hits in UK trades or marketing-agency spaces. Domain `firstquotesystem.co.uk` purchased same day.
-
-**It constrains the offer honestly.** The name promises the *first response*, nothing else. Not voice AI, not multi-channel orchestration, not bespoke platforms. The name matches the concierge MVP, which matches what the plumber actually experiences.
-
-**It compounds with the vertical.** "First Quote System for UK plumbers" is searchable, describable, and referrable in one sentence. Plumber-to-plumber referral language — *"bloke does First Quote System, gets me the first quote in"* — is the shape of the ≥20% referral-sourcing target in exit gate 6.
+Landing page, outreach, and sales calls will reference **"the Jumpmade Partnership for UK Plumbers"** as the top-line brand. No sub-mechanism name is used in external communications.
 
 ---
 
-## Rejected candidates
+## Why deferred
 
-| Name | Why rejected |
+On 2026-04-21, eleven iterations on a mechanism name failed to land cleanly. The pattern on the day:
+
+1. Original instinct: "Sniper OS" (V1 name, demolished with V1)
+2. Recommended: Van Filler (rejected as too British-slangy)
+3. Committed and domain-bought: First Quote System (rejected as not emotionally striking enough)
+4. Recommended pivot: Booked Solid (domain taken)
+5. Brainstorm batch 1: Van Filler / Reply Edge / Booked Solid / First Reply Method (none locked)
+6. Brainstorm batch 2: Flat Out / Packed Out / Stacked Out / Full Flow (domains taken or didn't land)
+7. Brainstorm batch 3: Live Pipe / Quick Draw / Lead Lock / First Hook (exploration, no commit)
+8. Founder-proposed hybrid: Pipeline Solid (grammatically broken, rejected)
+9. Founder referenced external brand: 360 Acquisition | Growth Partner (wrong audience register for plumbers)
+10. Founder proposed: defer and use Jumpmade brand — **accepted**
+11. Customer #1 will eventually describe the mechanism in a referral conversation — that becomes its name
+
+The core insight: naming a methodology before customer #1 has described what they use is inventing vocabulary. Named mechanisms that succeed (e.g. "Strike Window," "FutureFlow System") are typically named *after* customers start using consistent language about the service, not before. Inventing names in advance requires guessing at the word the market will echo — and eleven misses on one day confirmed that guessing without customer signal is wasted effort.
+
+**Deferral is the correct move at Day 3.** It unblocks the landing page, removes the domain-purchase drag, eliminates the rename-risk later, and preserves the option to coin the right name once a plumber tells you what their actual experience is.
+
+---
+
+## What replaces the mechanism name for now
+
+**Brand:** Jumpmade (parent company, pre-existing)
+**URL:** jumpmade.com (owned)
+**Positioning line:** *"The Jumpmade Partnership — for UK plumbers who want a full diary."*
+**Sub-mechanism name:** none, by design
+
+Every external artefact (landing page, email, SMS, pitch) references "the partnership" or "Jumpmade" as the brand-level identifier. The mechanism is described by outcome (*"we book you extra jobs"*) and process (*"we reply first to every lead"*), not by a proper-noun label.
+
+---
+
+## Rejected / superseded candidates (historical record)
+
+Each considered on 2026-04-21. None locked.
+
+| Name | Why not |
 |---|---|
-| **Strike Window** | Already in active use by Voice Install (logged in V1 `competitor-research.md` line 142). Direct competitor conflict, not a theoretical one. Also "strike" carries union / industrial-action connotations in British English that may land wrongly with tradesmen. |
-| **Reply Zero** | Phonetically excellent and clever (plays on "Inbox Zero"), but meaning is ambiguous without explanation. "Inbox Zero" is a tech-culture reference; plumber buyers won't reach for it. Cool to the seller, opaque to the buyer. |
-| **Lead Intercept** | Strong sound, clear mechanism imagery (intercepting in flight), but "lead" is B2B-SaaS jargon a plumber may find patronising. Off-register for the buyer persona. |
-| **Headstart System** | Clear and universal, but generic. Could be a meal kit, a tutoring service, a running coach. Not memorable, not ownable, not visual. |
-
-All four were on the founder's shortlist on 2026-04-21 after brainstorming 15 candidates. Strike Window was the first instinctual favourite and was rejected specifically on ownability grounds.
-
----
-
-## Adjacent-brand note (for future reference)
-
-A US insurance-comparison brand family operates under the one-word "FirstQuote" label:
-
-- FirstQuote Medicare (`firstquotemedicare.com`)
-- FirstQuote Auto (`firstquoteauto.com`)
-- FirstQuote Health (`firstquotehealth.com`)
-
-Not a conflict because (a) different industry — insurance, not trades; (b) different geography — US, not UK; (c) different word structure — one compound word, not three separate words. Logged here so future-you is not surprised when searching adjacency and finds them.
+| Sniper OS | V1 brand, demolished with V1 |
+| Van Filler | Too British-slangy; founder felt didn't wow |
+| **First Quote System** | Committed then rejected same day for not being emotionally striking; domain `firstquotesystem.co.uk` purchased and remains owned (redirect to jumpmade.com recommended) |
+| Reply Zero | Ambiguous meaning to plumber buyers |
+| Lead Intercept | B2B-SaaS jargon register, wrong for plumbers |
+| Headstart System | Generic |
+| Strike Window | Used by Voice Install (V1 competitor research line 142) |
+| Booked Solid | Domain taken |
+| Full Flow | Domain taken |
+| Running Hot / Booked Out | Didn't land with founder |
+| Flat Out / Packed Out / Stacked Out | Brainstorm batch, never locked |
+| Live Pipe | Founder didn't pursue |
+| Quick Draw / Lead Lock / First Hook / Prime Time / Hot Tap / The Fast Lane | Brainstorm batch, never locked |
+| Pipeline Solid | Grammatically broken (adjective-noun order reversed) |
 
 ---
 
-## Domain and digital ownership
+## Domain ownership
 
-| Asset | Status | Date |
-|---|---|---|
-| `firstquotesystem.co.uk` | **Owned** | 2026-04-21 |
-| `firstquotesystem.com` | Not yet acquired | — |
-| UK trademark filing | Not filed | — |
-| Google search ranking for exact phrase | Unranked — opportunity | — |
-
-Recommended next purchases (cost-justified, low-urgency): `firstquotesystem.com` if available under £100; `.uk` variant if not bundled with `.co.uk`. Trademark filing deferred to post-customer-5 per concierge mandate — premature legal spend before revenue.
+| Domain | Status |
+|---|---|
+| `jumpmade.com` | **Owned — V2 landing page** |
+| `firstquotesystem.co.uk` | Owned (2026-04-21), now redundant. Recommend 301 redirect to jumpmade.com to preserve the £10 spend. |
 
 ---
 
-## Usage rules
+## When the mechanism gets its name
 
-**Where the name appears:**
+Two trigger conditions, whichever arrives first:
 
-- Every outbound message (SMS, WhatsApp, email, LinkedIn).
-- Every voicemail script.
-- Every landing page H1.
-- Every invoice, contract, proposal.
-- Every client-facing doc.
+1. **Customer #1 describes it in their own words** — when a paying plumber in conversation says *"my [X] guy"* or *"that [Y] thing you set up"* or *"the [Z] system"* — repeatedly — that word becomes the mechanism name. Founder logs it, tests it on customer #2 and #3, and if it sticks, that is the name.
+2. **2026-06-16 strategic review** — if no customer-sourced name has emerged by the first strategic review date, revisit deliberately and commit.
 
-**How to say it:**
-
-- Full name always on first mention: *"First Quote System"* (three words, proper-cased).
-- After first mention in a conversation, acceptable to shorten: *"the system,"* *"your First Quote setup,"* but never *"FQS"* or other abbreviation. Initialisms kill recognition.
-- Pair with buyer and vertical in shorthand: *"First Quote System for UK plumbers."* Never just *"First Quote System"* standalone in external copy — the audience qualifier reinforces the vertical discipline.
-
-**Tone guidelines:**
-
-- Sell the **outcome**, not the mechanism. *"Your quote lands first"* > *"Our AI responds in under 60 seconds."*
-- Resist technical framing. Plumbers buy results; the tech stack is invisible to them.
-- Do not over-explain in copy. The name is supposed to do work — let it.
+Do not coin a name in the absence of both triggers. The deferral is the decision.
 
 ---
 
-## Triggers to revisit
+## Guardrails against re-opening
 
-Per the 8-week strategic lockup (Override #1), the mechanism name is fixed until **2026-06-16** at the earliest. Before that date, Claude refuses to re-open the name decision.
+The mechanism-name question was one of the most drift-heavy decisions on 2026-04-21 (11 iterations in one conversation). To prevent repeat patterns:
 
-Legitimate post-lockup review conditions:
-
-- Trademark conflict surfaces from an actual legal letter (not a Google hunch).
-- Founder-observed plumber reaction is consistently negative across ≥10 conversations (e.g. plumbers repeatedly misinterpret or dislike the name).
-- A Ring-2 trade vertical (gas engineers, electricians) wants the name applied — at which point the question is whether the same name holds cross-trade or needs expansion (e.g. *"First Quote System for UK tradespeople"*).
-
-Absent one of those, the name holds.
-
----
-
-## Next on the checklist
-
-**Day 10 (2026-05-01):** Landing page live at `firstquotesystem.co.uk`. One page. One offer. One CTA. Document in `jumpmade-v2/offer/landing-page-copy.md` (copy) and the hosted URL once live.
+- Claude sessions must refuse to brainstorm new mechanism names before trigger condition 1 or 2 above is met
+- Founder-initiated reopenings without customer signal are logged as drift events, not tactical iteration
+- If a name "feels right" mid-week, log it in a candidates file — do not lock it
+- The charter's 8-week lockup (Override #1) applies to the naming *decision* itself, not to the act of noticing candidate names

@@ -19,7 +19,7 @@ Re-subscribe **GoHighLevel (Pro tier)** as the CRM + SMS layer, retain the exist
 |---|---|---|
 | CRM of record | GHL (Pro tier, $297/mo) | Contact + opportunity management, SMS sender, invoice engine |
 | Checkatrade ingestion | Existing Railway-housed Sniper OS backend (unchanged) | Email listener → Checkatrade API → Gemini score → GHL push |
-| Other lead sources | n8n (cloud) — **config only, no custom code** | MyBuilder, Bark, Rated People, Google Lead Form, Facebook Lead Ads → normalised → GHL |
+| Other lead sources | n8n (cloud) — **config only, no custom code** | MyBuilder, Bark, Rated People, MyJobQuote, Airtasker, Google Lead Form, Facebook Lead Ads → normalised → GHL |
 | Conversation AI | Claude / GPT API via n8n | Replaces GHL native Conversation AI. Books appointments, qualifies leads, sends to plumber |
 | Messaging | Twilio via GHL, WhatsApp Business via Twilio | New-lead channel. Separate from plumber's personal numbers. |
 | Payments | Square (UK availability to verify) | Card + cash both supported. Removes "no payment processor" invoice notice. |
@@ -28,15 +28,54 @@ Re-subscribe **GoHighLevel (Pro tier)** as the CRM + SMS layer, retain the exist
 
 ---
 
-## GHL tier progression
+## GHL tier progression (verified 2026-04-22)
 
-| Customer count | GHL tier | Approx. monthly |
+| Customer count | GHL tier | Monthly cost |
 |---|---|---|
-| 0–2 | Pro (SaaS) | $297 |
-| 3–7 | Unlimited | $497 |
-| 8+ | Agency SaaS | ~$497 + rebill |
+| 0–3 | **Starter** | **$97** |
+| 4–N | **Unlimited** | **$297** |
+| (Deferred) | Agency Pro / SaaS Mode | $497 — revisit at customer 10+ if white-labelling or SaaS-mode rebilling is justified |
 
-Do NOT start on Agency tier. Saves ~£100–200/mo until customer count justifies it.
+Starter is the launch tier. Upgrade to Unlimited is a single trigger: the moment customer #4 signs. Upgrade is instant via GHL admin, no data migration required, ~5 minutes of admin.
+
+### Why Starter works for V2 launch — full reasoning (verified 2026-04-22)
+
+The five architectural requirements from the V2 stack were pressure-tested against each GHL tier. All passed on Starter:
+
+| Architectural need | Starter | Verdict |
+|---|---|---|
+| Private Integration Tokens (for Sniper OS → GHL auth) | Yes, at Location level, up to 3 sub-accounts | ✅ |
+| Inbound webhooks (n8n → GHL lead creation) | Yes, with same premium-execution cost structure as Unlimited | ✅ |
+| Outbound webhook triggers (GHL → n8n → Claude/GPT) | Yes, standard webhooks free, custom webhooks at per-execution cost | ✅ |
+| Programmatic contact/opportunity/conversation write | Yes, via Location API v2 | ✅ |
+| API v2 support | Yes (GHL deprecated v1 at end of 2025; all tiers use v2) | ✅ |
+| Snapshots (template → client clone, for 7-day SLA) | Yes, deploy to 3 sub-accounts | ✅ |
+
+What Starter does NOT include (and why it doesn't matter at V2 launch):
+
+- **Desktop/mobile white-label branding** — clients see Lead Connector branding instead of Jumpmade. Cosmetic. Revisit post-exit-gate when premium perception matters.
+- **Rebilling premium usage to clients at cost** — on Starter, Jumpmade absorbs SMS/webhook premium costs inside the £80–100/mo infrastructure fee. Represents £5–15/client/month of absorbed cost vs Unlimited. Immaterial at 1–3 client scale.
+- **Agency-level API** — can only manipulate contacts/opportunities inside sub-accounts, not programmatically create/delete sub-accounts themselves. At V2 scale, sub-accounts are created manually anyway. Irrelevant until automated onboarding at customer 10+.
+
+Expected cash savings over concierge phase:
+
+| Month | Client count | Starter cost | Unlimited cost | Saved by starting on Starter |
+|---|---|---|---|---|
+| 1 | 0–1 | £97 | £297 | £200 |
+| 2 | 1–2 | £97 | £297 | £200 |
+| 3 | 2–3 | £97 | £297 | £200 |
+| 4 | 3→4 (upgrade triggered) | £297 | £297 | £0 |
+
+If the 4-clients-by-month-3 trajectory holds: **£600 preserved**. Slower pace (4 clients by month 5-6) extends savings to **£800-1,000**. At pre-PMF this is meaningful runway, not a rounding error.
+
+### Starter tier decision log
+
+- **Decision date:** 2026-04-22
+- **Rationale:** All V2 architectural requirements verified as available on Starter. The 3-sub-account ceiling aligns with the V2 launch target of customers 1–3 in the first 30 days. Upgrade to Unlimited at customer 4 is clean and cheap (£200/mo delta). Starter preserves £600-1,000 of cash during concierge phase without compromising delivery.
+- **Explicitly rejected:** buying Unlimited "to keep options open." At zero customers, paying for unlimited sub-accounts you don't yet need is exactly the kind of premature optionality spend the charter guards against.
+- **Explicitly rejected:** Agency Pro. White-labelling and SaaS-mode rebilling are features for a post-exit-gate agency, not a Day-3 pre-PMF concierge phase.
+- **Upgrade trigger:** customer #4 pays. Founder upgrades GHL tier in admin within 24h of that payment, before onboarding customer 4.
+- **Reversal criteria:** if snapshots break the 7-day onboarding SLA in practice with customer #1, immediately upgrade to Unlimited and treat the £200 cash loss as learning. This is a hypothesis, not a certainty.
 
 ---
 
@@ -87,7 +126,7 @@ The V2 stack uses n8n, Claude / GPT APIs, and existing Sniper OS all at once. Im
 - **Writing custom n8n nodes, self-hosting n8n on custom infrastructure, or extending Sniper OS with new platform parsers** = BUILDING. BLOCKED until customer 5+ per concierge mandate.
 - **Manual delivery** (founder watching an inbox, WhatsApping plumber directly, typing SMS replies by hand) = ENCOURAGED, especially in first 14 days.
 
-Practical consequence: all six lead sources in the stack table above (Checkatrade via Sniper OS, MyBuilder + Bark + Rated People via n8n config, Google Lead Form + Facebook Lead Ads via native GHL integrations) are **launch-ready** under the concierge mandate. The charter's "multi-platform within the vertical" rule is not deferred to post-customer-5. It is V2's Day-1 footprint, implemented via configuration and existing code, never via new custom code.
+Practical consequence: all eight lead sources in the stack table above (Checkatrade via Sniper OS; MyBuilder + Bark + Rated People + MyJobQuote + Airtasker via n8n config; Google Lead Form + Facebook Lead Ads via native GHL integrations) are **launch-ready** under the concierge mandate. The charter's "multi-platform within the vertical" rule is not deferred to post-customer-5. It is V2's Day-1 footprint, implemented via configuration and existing code, never via new custom code. (Platform count expanded from 6 → 8 per Override #3, 2026-04-25.)
 
 Onboarding reality: do not try to activate all six sources for customer #1. Each plumber gets only the sources they actually use. Some plumbers will be Checkatrade-only, some Bark-heavy, some multi-platform. Match the customer, not the stack.
 
