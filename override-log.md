@@ -74,3 +74,31 @@ Recording rejected drift attempts creates a dated trail so the same question can
 **Status:** CLOSED. Proposal refused. GHL re-sub with above mitigations is the Day-3 decision, to be documented in `jumpmade-v2/decisions/delivery-platform.md`.
 
 ---
+
+## Override #3 — 2026-04-25 — Platform expansion 6 → 8
+
+**Charter clauses amended:**
+- `decisions/offer.md` line 26 (deliverable item 1 — platform list capped at 6)
+- `decisions/offer.md` line 165 ("Adding new deliverables to 'included' (scope expansion)" requires override)
+
+**Change:** Add MyJobQuote and Airtasker to the V2 included platform list. New total: 8 platforms (Checkatrade, MyBuilder, Bark, Rated People, MyJobQuote, Airtasker, Google Lead Form, Facebook Lead Ads).
+
+**Founder's stated reason (2026-04-25):**
+On reviewing the v1 landing-page draft on 2026-04-25, founder concluded the locked 4-platform marketplace set under-covered the active UK plumber lead surface. MyJobQuote and Airtasker are present in the existing buyer mix; excluding them from the public offer weakens credibility on a fit call when a prospect names either as a primary lead source. This is a one-time pre-launch correction, not a recurring scope-broadening pattern.
+
+**Cost-model impact:** Variable cost band remains within the original £72 (concierge) / £87 (post-Unlimited) range. MyJobQuote and Airtasker both route inbound leads via email or webhook into the existing GHL pipeline — no new API surcharge, marginal SMS uplift only (estimated +£1–£2/customer/mo if a single customer uses all 8 simultaneously, which in practice no plumber does). Margin band 71%/65% holds. No re-pricing of the offer required.
+
+**Claude's noted concern (for honest record):**
+This is the third override event in V2's first 4 days (Override #1 lockup reduction 2026-04-21; Override #2 in-house-build proposal rejected 2026-04-21; Override #3 platform expansion 2026-04-25). The override-log preamble specifies *"if overrides exceed two per month, the charter is failing and must be re-negotiated explicitly rather than eroded silently."* The literal trip-wire (overrides *granted*) holds within tolerance — Override #2 was rejected, so we are at 2 granted within 4 days. But the *frequency of pressure on the charter* is what the trip-wire is actually measuring, and three override events in week 1 is signal. The 2026-05-21 monthly review must examine whether sustained scope/charter pressure indicates a deeper recalibration is needed. Logged for future reference, not as grounds to refuse this override.
+
+**Operative effect:**
+- `decisions/offer.md` deliverable item 1 amended to list 8 platforms.
+- `decisions/delivery-platform.md` stack table amended to list 8 platforms; "all six lead sources" updated to "all eight lead sources."
+- Override applies from 2026-04-25 forward.
+- Landing page (in development) reflects 8 platforms with no "only" or "some" qualifier — neutral inventory framing per founder direction.
+
+**Next review:** 2026-06-16 with the rest of the offer.
+
+**Status:** APPROVED.
+
+---
