@@ -1,0 +1,14 @@
+{
+  "name": "jumpmade-landing-page",
+  "version": "0.1.0",
+  "description": "jumpmade.com landing page — hand-built HTML+Tailwind",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i styles/input.css -o dist/output.css --watch",
+    "build": "tailwindcss -i styles/input.css -o dist/output.css --minify"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "tailwindcss": "^3.4.19"
+  }
+}

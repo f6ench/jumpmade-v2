@@ -1,0 +1,25 @@
+# /etc/caddy/Caddyfile — jumpmade.com production
+# Deploy this file once, then `sudo systemctl reload caddy`.
+# Static-file changes via deploy.sh do NOT require a reload.
+
+jumpmade.com, www.jumpmade.com {
+    root * /srv/jumpmade.com
+    file_server
+    encode gzip zstd
+
+    # Long-cache hashed/static assets
+    @assets path /assets/*
+    header @assets Cache-Control "public, max-age=31536000, immutable"
+
+    # Short-cache the HTML entrypoint so copy fixes propagate quickly
+    @html path /
+    header @html Cache-Control "public, max-age=300"
+
+    # Reasonable defaults for the CSS bundle (filename is stable for now)
+    @css path /dist/output.css
+    header @css Cache-Control "public, max-age=300"
+}
+
+firstquotesystem.co.uk, www.firstquotesystem.co.uk {
+    redir https://jumpmade.com{uri} permanent
+}
