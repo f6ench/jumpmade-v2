@@ -102,3 +102,45 @@ This is the third override event in V2's first 4 days (Override #1 lockup reduct
 **Status:** APPROVED.
 
 ---
+
+## Override #4 — 2026-04-25 — First metrics send delayed from 2026-04-27 to 2026-05-04
+
+**Charter clauses overridden:**
+- `rules.md` line 60 (founder ground rule #1): *"Monday metrics, every week, no exceptions. One file: `jumpmade-v2/metrics/wk-NN.md`. Six lines: revenue collected, demos booked, demos done, close rate, hours worked, spend. No prose. Published every Monday morning."*
+- `operations/accountability.md` table row: *"First metrics send: Monday 2026-04-27 by 10:00 (non-negotiable)."*
+
+**Change:** First Monday metrics file published one week later than committed. `wk-18.md` (covering 2026-04-27 → 2026-05-03) published Monday 2026-05-04 instead of `wk-17.md` Monday 2026-04-27. Skips wk-17 entirely.
+
+**Founder's stated reason (paraphrased, 2026-04-25):**
+Outreach restarts Monday 2026-04-27. The wk-17 file would report on a week that pre-dated outreach, with revenue, demos booked, demos done, and close rate all at zero. Founder considers this an empty file unworthy of sending; metrics begin reporting from the first outreach week.
+
+**Claude's noted concern (for honest record):**
+
+This is the **fourth override event in V2's first 7 days.** Sequence:
+
+| # | Date | Event | Status |
+|---|---|---|---|
+| 1 | 2026-04-21 | Strategic lockup 12w → 8w | Granted |
+| 2 | 2026-04-21 | In-house build proposal | Rejected |
+| 3 | 2026-04-25 | Platform expansion 6 → 8 | Granted |
+| 4 | 2026-04-25 | First metrics send delayed 1 week | Granted |
+
+The override-log preamble's trip-wire is *"more than two per month."* We are at **three granted in seven days** — already past the trip-wire on the very first month, with three more weeks to go.
+
+The substance of this override is the V1 failure pattern in compressed form. V1's metrics tools went silent across 2026-02-25 → 2026-03-01 not because the founder refused to send them, but because the founder waited for interesting data to write. By the time interesting data existed, the discipline had collapsed. The reasoning *"nothing to report = nothing to send"* is the precise lever V1 used to delay each subsequent send. The charter's wording (*"two empty weeks in a row = silence"*) was specifically authored on 2026-04-21 to anticipate this exact proposal — the founder's own audit named it as V1's biggest behavioural failure mode.
+
+The four-override cadence — three granted in week 1 — is the leading indicator the charter's own preamble is asking us to watch for. The 2026-05-21 monthly review must examine whether the V2 charter has held in any meaningful sense, or whether the founder is, in compressed form, retracing V1's pattern with a stronger paper trail.
+
+Logged for future reference. Not as grounds to refuse this override — the founder has explicit authority over founder ground rules — but as the strongest noted concern in any override entry to date.
+
+**Operative effect:**
+- `wk-17.md` (covering 2026-04-20 → 2026-04-26) NOT published.
+- `wk-18.md` (covering 2026-04-27 → 2026-05-03) published Monday 2026-05-04 by 10:00.
+- Seyi must be notified that first metrics send moved one week — failure to notify Seyi means the accountability mechanism breaks before it has fired once.
+- `operations/accountability.md` amended to reflect new first-send date.
+
+**Next review:** 2026-05-21 monthly override-log review (per `override-log.md` preamble).
+
+**Status:** APPROVED.
+
+---

@@ -17,7 +17,7 @@ Per V2 charter — the external human who receives Monday metrics by 10am every 
 | Status | **Confirmed — active** |
 | Asked on | 2026-04-21 |
 | Confirmed on | 2026-04-21 |
-| First metrics send | Monday 2026-04-27 by 10:00 (non-negotiable) |
+| First metrics send | **Monday 2026-05-04 by 10:00** (delayed one week per Override #4, 2026-04-25). Original committed date was 2026-04-27. Seyi must be notified of the date change. |
 
 ## Secondary — Daily presence layer (not the metrics partner)
 
