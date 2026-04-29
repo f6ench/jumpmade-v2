@@ -711,13 +711,14 @@
 
   /* Excluded variant — used in §4 "Not included" list */
   .feature-list.is-excluded > li {
-    color: var(--ink-dim);
+    color: var(--ink-muted);
+    opacity: 0.85;
   }
 
   .feature-list.is-excluded > li::before {
     content: '×';
     background: transparent;
-    color: var(--ink-dim);
+    color: var(--ink-muted);
     width: auto;
     height: auto;
     top: 0;
@@ -946,7 +947,7 @@
 
   .cost-cell .sub {
     font-size: 0.8125rem;
-    color: var(--ink-dim);
+    color: var(--ink-muted);
   }
 
   .cost-cell.is-result .value {
