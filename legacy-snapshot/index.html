@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumpmade | AI-Powered Lead Generation That Actually Converts</title>
+    <meta name="description" content="We build automated outreach systems, lead pipelines, and sales engines. More leads. More replies. More revenue.">
+    <meta property="og:title" content="Jumpmade | AI-Powered Lead Generation That Actually Converts">
+    <meta property="og:description" content="We build automated outreach systems, lead pipelines, and sales engines. More leads. More replies. More revenue.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0c'/><text x='16' y='22' text-anchor='middle' font-family='system-ui' font-weight='800' font-size='16' fill='%23f0f0f2'>JM</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        surface: { DEFAULT: '#111113', elevated: '#1a1a1e', hover: '#1e1e22' },
+                        dark: '#0a0a0c',
+                        heading: '#f0f0f2',
+                        body: '#d0d0d4',
+                        muted: '#8a8f9a',
+                        secondary: '#626b7a',
+                        pill: '#e2e4e8',
+                    },
+                    fontFamily: {
+                        heading: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                        body: ['"DM Sans"', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="bg-dark text-body font-body antialiased">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 z-50 nav-blur">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="font-heading font-800 text-xl text-heading tracking-tight">Jumpmade</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#services" class="text-sm text-muted hover:text-heading transition-colors">What We Do</a>
+                <a href="#results" class="text-sm text-muted hover:text-heading transition-colors">Results</a>
+                <a href="#about" class="text-sm text-muted hover:text-heading transition-colors">About</a>
+                <a href="#booking" class="btn-primary text-sm px-5 py-2.5 rounded-lg font-semibold">Book a Call</a>
+            </div>
+            <button id="mobile-toggle" class="md:hidden text-heading p-2" aria-label="Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-surface border-t border-white/[0.06]">
+            <div class="px-6 py-4 flex flex-col gap-4">
+                <a href="#services" class="text-sm text-muted hover:text-heading transition-colors mobile-link">What We Do</a>
+                <a href="#results" class="text-sm text-muted hover:text-heading transition-colors mobile-link">Results</a>
+                <a href="#about" class="text-sm text-muted hover:text-heading transition-colors mobile-link">About</a>
+                <a href="#booking" class="btn-primary text-sm px-5 py-2.5 rounded-lg font-semibold text-center mobile-link">Book a Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <canvas id="particle-canvas" class="absolute inset-0 w-full h-full"></canvas>
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24">
+            <div class="hero-line">
+                <span class="inline-block text-sm font-medium text-muted border border-white/[0.08] rounded-full px-4 py-1.5 mb-8">AI Growth Partner</span>
+            </div>
+            <h1 class="hero-line font-heading font-800 text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-heading leading-[1.1] mb-6">
+                AI-Powered Lead Generation That Actually Converts
+            </h1>
+            <p class="hero-line text-lg md:text-xl text-muted max-w-2xl mx-auto mb-10">
+                We build automated outreach systems, lead pipelines, and sales engines. More leads. More replies. More revenue.
+            </p>
+            <div class="hero-line flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#booking" class="btn-primary px-8 py-3.5 rounded-lg font-heading font-700 text-base">Book a Free Growth Call</a>
+                <a href="#results" class="btn-secondary px-8 py-3.5 rounded-lg font-heading font-600 text-base text-muted border border-white/[0.1] hover:border-white/[0.2] hover:text-heading transition-all">See Our Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="py-24 md:py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-heading font-800 text-3xl md:text-4xl text-heading mb-4">Most Businesses Burn Money on Leads They Never Convert</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card-dark fade-in" data-delay="1">
+                    <div class="text-4xl font-heading font-800 text-heading mb-4 stat-num" data-target="78" data-suffix="%">0%</div>
+                    <p class="text-body leading-relaxed">You're paying for leads but your response time is killing conversions. The first to respond wins 78% of the time.</p>
+                </div>
+                <div class="card-dark fade-in" data-delay="2">
+                    <div class="text-4xl font-heading font-800 text-heading mb-4 stat-num" data-target="2000" data-prefix="" data-suffix="">0</div>
+                    <p class="text-body leading-relaxed">Your outreach is manual. You send 20 messages a day when you should be sending 2,000.</p>
+                </div>
+                <div class="card-dark fade-in" data-delay="3">
+                    <div class="text-4xl font-heading font-800 text-heading mb-4 stat-num" data-target="60" data-suffix="%">0%</div>
+                    <p class="text-body leading-relaxed">Leads go cold because nobody follows up. 60% of prospects need 5+ touchpoints before they buy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 md:py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-heading font-800 text-3xl md:text-4xl text-heading mb-4">What We Specialise In</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="service-card fade-in" data-delay="1">
+                    <div class="service-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">Lead Generation</h3>
+                    <p class="text-muted text-sm leading-relaxed">Cold email, outbound sequences, and content-driven pipelines that fill your calendar.</p>
+                </div>
+                <div class="service-card fade-in" data-delay="2">
+                    <div class="service-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">Revenue Operations</h3>
+                    <p class="text-muted text-sm leading-relaxed">CRM buildouts, pipeline automation, and nurture systems that close more deals.</p>
+                </div>
+                <div class="service-card fade-in" data-delay="3">
+                    <div class="service-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">Frontend Experiences</h3>
+                    <p class="text-muted text-sm leading-relaxed">Landing pages, web apps, and conversion-optimised funnels that turn traffic into leads.</p>
+                </div>
+                <div class="service-card fade-in" data-delay="1">
+                    <div class="service-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">Hiring Systems</h3>
+                    <p class="text-muted text-sm leading-relaxed">Intake funnels, AI-powered candidate scoring, and automated screening workflows.</p>
+                </div>
+                <div class="service-card fade-in" data-delay="2">
+                    <div class="service-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"/></svg>
+                    </div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">Backend Infrastructure</h3>
+                    <p class="text-muted text-sm leading-relaxed">APIs, data pipelines, and AI agents that power your operations behind the scenes.</p>
+                </div>
+                <div class="service-card fade-in" data-delay="3">
+                    <div class="service-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+                    </div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">AI Strategy and Training</h3>
+                    <p class="text-muted text-sm leading-relaxed">Workshops, roadmapping, and hands-on training to get your team using AI properly.</p>
+                </div>
+            </div>
+            <p class="text-center text-muted fade-in">We don't teach theory. We build and run the systems.</p>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="py-24 md:py-32 border-t border-white/[0.06]">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-heading font-800 text-3xl md:text-4xl text-heading mb-4">Built for Businesses That Need a Predictable Pipeline</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 fade-in">
+                <div class="industry-pill">Trades and Home Services</div>
+                <div class="industry-pill">Agencies</div>
+                <div class="industry-pill">SaaS</div>
+                <div class="industry-pill">Consulting</div>
+                <div class="industry-pill">Recruitment</div>
+                <div class="industry-pill">E-commerce</div>
+                <div class="industry-pill">Professional Services</div>
+                <div class="industry-pill">Real Estate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="py-24 md:py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-heading font-800 text-3xl md:text-4xl text-heading mb-4">Real Systems. Real Numbers.</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Case Study 1 -->
+                <div class="case-card fade-in" data-delay="1">
+                    <div class="border-beam"></div>
+                    <span class="inline-block text-xs font-semibold text-dark bg-pill rounded-full px-3 py-1 mb-4">Recruitment</span>
+                    <h3 class="font-heading font-700 text-xl text-heading mb-3">From 0 to 2,400 Leads/Month</h3>
+                    <p class="text-muted text-sm leading-relaxed mb-6">A 3-person recruitment agency was sending 40 cold emails a day by hand. We built an automated outreach pipeline that sends 2,400 targeted messages a month with zero manual work.</p>
+                    <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/[0.06]">
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading stat-num" data-target="2400">0</div>
+                            <div class="text-xs text-secondary">leads/mo</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading stat-num" data-target="12" data-suffix="%">0%</div>
+                            <div class="text-xs text-secondary">reply rate</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading">3</div>
+                            <div class="text-xs text-secondary">operators</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case Study 2 -->
+                <div class="case-card fade-in" data-delay="2">
+                    <div class="border-beam"></div>
+                    <span class="inline-block text-xs font-semibold text-dark bg-pill rounded-full px-3 py-1 mb-4">Trades</span>
+                    <h3 class="font-heading font-700 text-xl text-heading mb-3">Response Time: 47 Minutes to 10 Seconds</h3>
+                    <p class="text-muted text-sm leading-relaxed mb-6">A solo plumber was losing 3 to 4 jobs a week to competitors who replied faster. We deployed an instant lead response system with voice AI and automated follow-up.</p>
+                    <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/[0.06]">
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading">&lt;10s</div>
+                            <div class="text-xs text-secondary">response</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading stat-num" data-target="100" data-suffix="%">0%</div>
+                            <div class="text-xs text-secondary">claimed</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading">1 day</div>
+                            <div class="text-xs text-secondary">setup</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Case Study 3 -->
+                <div class="case-card fade-in" data-delay="3">
+                    <div class="border-beam"></div>
+                    <span class="inline-block text-xs font-semibold text-dark bg-pill rounded-full px-3 py-1 mb-4">B2B Consulting</span>
+                    <h3 class="font-heading font-700 text-xl text-heading mb-3">Multi-Channel Pipeline, Built in 8 Weeks</h3>
+                    <p class="text-muted text-sm leading-relaxed mb-6">A consulting firm needed an outbound system. We built a coordinated pipeline across LinkedIn, cold email, and retargeting. Fully operational within 8 weeks.</p>
+                    <div class="grid grid-cols-3 gap-3 pt-4 border-t border-white/[0.06]">
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading stat-num" data-target="3">0</div>
+                            <div class="text-xs text-secondary">channels</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading stat-num" data-target="8">0</div>
+                            <div class="text-xs text-secondary">weeks</div>
+                        </div>
+                        <div>
+                            <div class="text-lg font-heading font-800 text-heading">Full</div>
+                            <div class="text-xs text-secondary">automation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="about" class="py-24 md:py-32 border-t border-white/[0.06]">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-heading font-800 text-3xl md:text-4xl text-heading mb-4">How It Works</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center fade-in" data-delay="1">
+                    <div class="step-number">1</div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">Discovery</h3>
+                    <p class="text-muted text-sm leading-relaxed">We audit your current pipeline and scope the build.</p>
+                </div>
+                <div class="text-center fade-in" data-delay="2">
+                    <div class="step-number">2</div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">Build</h3>
+                    <p class="text-muted text-sm leading-relaxed">We design and deploy your system. Most builds take 1 to 2 weeks.</p>
+                </div>
+                <div class="text-center fade-in" data-delay="3">
+                    <div class="step-number">3</div>
+                    <h3 class="font-heading font-700 text-lg text-heading mb-2">Scale</h3>
+                    <p class="text-muted text-sm leading-relaxed">Ongoing management, optimisation, and reporting.</p>
+                </div>
+            </div>
+            <p class="text-center text-muted mt-12 fade-in">Every system is custom-built.</p>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="py-24 md:py-32 border-t border-white/[0.06]">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-10 fade-in">
+                <h2 class="font-heading font-800 text-3xl md:text-4xl text-heading mb-2">Joseph French</h2>
+                <p class="text-lg text-muted mb-2">Call with Jumpmade</p>
+                <p class="text-sm text-secondary max-w-lg mx-auto">30-minute video call. Includes a pipeline audit, needs analysis, and suggested next steps. Business inquiries only.</p>
+            </div>
+            <div class="fade-in booking-embed">
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/booking/rzwKze2j7JZBzcgxKhec"
+                    style="width:100%;height:700px;border:none;border-radius:12px;"
+                    scrolling="no"
+                    loading="lazy"
+                    title="Book a call with Jumpmade"
+                ></iframe>
+            </div>
+            <div class="text-center mt-6 fade-in">
+                <a href="https://api.leadconnectorhq.com/widget/booking/rzwKze2j7JZBzcgxKhec" target="_blank" rel="noopener" class="text-sm text-secondary hover:text-muted transition-colors underline underline-offset-4">Open booking page directly</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/[0.06] py-12">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="font-heading font-700 text-heading">Jumpmade</div>
+            <div class="text-sm text-secondary">&copy; 2026 Jumpmade. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

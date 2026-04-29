@@ -4,32 +4,45 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: '#F8F6F1',
-        surface: '#FFFFFF',
+        bg: '#FFFFFF',
+        surface: '#FAFAFA',
         ink: {
-          DEFAULT: '#1A1D21',
-          muted: '#4A4F57',
+          DEFAULT: '#0A0A0B',
+          2: '#18181B',
+          muted: '#52525B',
+          dim: '#A1A1AA',
         },
         border: {
-          subtle: '#E8E3D9',
+          DEFAULT: '#E4E4E7',
+          rule: '#F4F4F5',
+          strong: '#D4D4D8',
         },
         accent: {
-          DEFAULT: '#2350D9',
-          dark: '#1B3FA8',
+          DEFAULT: '#4F39F6',
+          dark: '#3B25E0',
+          tint: '#F0EDFF',
+          ink: '#1B1140',
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'],
+        display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+        sans: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
       },
       maxWidth: {
-        prose: '640px',
+        page: '1200px',
+        prose: '720px',
+        narrow: '560px',
       },
       letterSpacing: {
-        wordmark: '-0.02em',
+        tightest: '-0.045em',
+        tighter: '-0.035em',
+        tight: '-0.02em',
+        kicker: '0.08em',
       },
-      boxShadow: {
-        card: '0 1px 2px rgba(26, 29, 33, 0.04), 0 4px 16px rgba(26, 29, 33, 0.06)',
-        header: '0 1px 0 rgba(26, 29, 33, 0.06)',
+      fontSize: {
+        'display-lg': ['clamp(3rem, 9vw, 5.5rem)', { lineHeight: '0.96', letterSpacing: '-0.04em', fontWeight: '600' }],
+        'display-md': ['clamp(2.25rem, 6vw, 3.5rem)', { lineHeight: '1.02', letterSpacing: '-0.035em', fontWeight: '600' }],
+        'display-sm': ['clamp(1.625rem, 4vw, 2.25rem)', { lineHeight: '1.1', letterSpacing: '-0.025em', fontWeight: '600' }],
       },
     },
   },

@@ -1,0 +1,213 @@
+/* Base */
+body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, .font-heading {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Nav blur */
+.nav-blur {
+    background: rgba(10, 10, 12, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Buttons */
+.btn-primary {
+    background: #fff;
+    color: #000;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+}
+
+.btn-secondary {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-1px);
+}
+
+/* Fade-in animations */
+.js .fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in[data-delay="1"] { transition-delay: 0.1s; }
+.fade-in[data-delay="2"] { transition-delay: 0.2s; }
+.fade-in[data-delay="3"] { transition-delay: 0.3s; }
+.fade-in[data-delay="4"] { transition-delay: 0.4s; }
+
+/* Hero text entrance */
+.hero-line {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-line:nth-child(1) { animation-delay: 0.1s; }
+.hero-line:nth-child(2) { animation-delay: 0.25s; }
+.hero-line:nth-child(3) { animation-delay: 0.4s; }
+.hero-line:nth-child(4) { animation-delay: 0.55s; }
+
+@keyframes heroReveal {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Dark cards */
+.card-dark {
+    background: #111113;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-dark:hover {
+    background: #1a1a1e;
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+/* Service cards */
+.service-card {
+    background: #111113;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-card:hover {
+    background: #1a1a1e;
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.service-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #1a1a1e;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: #d0d0d4;
+}
+
+/* Industry pills */
+.industry-pill {
+    background: #111113;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.875rem;
+    color: #d0d0d4;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.industry-pill:hover {
+    background: #1a1a1e;
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Case study cards */
+.case-card {
+    background: #111113;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.case-card:hover {
+    background: #1a1a1e;
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+/* Border beam (grayscale) */
+@property --beam-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.border-beam {
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 16px;
+    background: conic-gradient(from var(--beam-angle, 0deg), transparent 60%, rgba(255,255,255,0.4) 78%, rgba(255,255,255,0.6) 82%, transparent 90%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: borderBeam 4s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes borderBeam {
+    to { --beam-angle: 360deg; }
+}
+
+/* Step numbers */
+.step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #1a1a1e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #f0f0f2;
+}
+
+/* Stat numbers */
+.stat-num {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Booking embed */
+.booking-embed {
+    background: #111113;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 4px;
+    overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-line h1,
+    h1 {
+        font-size: 2.25rem;
+    }
+}

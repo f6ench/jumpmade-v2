@@ -6,34 +6,45 @@ import { dirname, resolve } from 'node:path';
 const here = dirname(fileURLToPath(import.meta.url));
 const out = resolve(here, '..', 'assets', 'og-image.png');
 
-// Inter isn't always installed locally — pick the closest available system sans
-// at runtime via fc-match. Falls back to DejaVu Sans / Liberation Sans on most
-// Linux boxes; macOS will pick up Inter if installed via Homebrew.
+// Try Bricolage Grotesque first (the page font); fall back to whichever sans
+// the system can supply. Resvg renders with whatever fc-match returns.
 import { execSync } from 'node:child_process';
-let preferredFont = 'Inter';
+let preferredFont = 'Bricolage Grotesque';
 try {
-  const match = execSync('fc-match -f "%{family}" Inter 2>/dev/null || true', {
+  const match = execSync('fc-match -f "%{family}" "Bricolage Grotesque" 2>/dev/null || true', {
     encoding: 'utf8',
   }).trim();
-  if (match && match.toLowerCase() !== 'inter') preferredFont = match;
+  if (match && match.toLowerCase() !== 'bricolage grotesque') preferredFont = match;
 } catch {}
 
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#F8F6F1"/>
-  <rect x="0" y="0" width="8" height="630" fill="#2350D9"/>
+  <defs>
+    <radialGradient id="glow" cx="85%" cy="-10%" r="55%">
+      <stop offset="0%" stop-color="#4F39F6" stop-opacity="0.12"/>
+      <stop offset="65%" stop-color="#4F39F6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stripe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F39F6"/>
+      <stop offset="60%" stop-color="#3B25E0"/>
+      <stop offset="100%" stop-color="#4F39F6"/>
+    </linearGradient>
+  </defs>
 
-  <text x="80" y="120" font-family="${preferredFont}" font-size="56" font-weight="700" fill="#1A1D21">Jumpmade</text>
-  <circle cx="430" cy="118" r="9" fill="#2350D9"/>
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="4" fill="url(#stripe)"/>
 
-  <text x="80" y="280" font-family="${preferredFont}" font-size="74" font-weight="700" fill="#1A1D21">UK plumbers:</text>
-  <text x="80" y="370" font-family="${preferredFont}" font-size="74" font-weight="700" fill="#1A1D21">6 extra booked jobs</text>
-  <text x="80" y="460" font-family="${preferredFont}" font-size="74" font-weight="700" fill="#1A1D21">in 30 days.</text>
+  <text x="72" y="220" font-family="${preferredFont}" font-size="76" font-weight="700" fill="#0A0A0B" letter-spacing="-2.5">UK plumbers: keep your</text>
+  <text x="72" y="310" font-family="${preferredFont}" font-size="76" font-weight="700" fill="#0A0A0B" letter-spacing="-2.5">diary full without</text>
+  <text x="72" y="405" font-family="${preferredFont}" font-size="76" font-weight="700" font-style="italic" fill="#4F39F6" letter-spacing="-2.5">chasing leads.</text>
 
-  <text x="80" y="535" font-family="${preferredFont}" font-size="32" font-style="italic" fill="#4A4F57">£300 setup &#183; £250/month &#183; Live in 7 days</text>
-  <text x="80" y="578" font-family="${preferredFont}" font-size="32" font-style="italic" fill="#4A4F57">Or every penny back.</text>
+  <line x1="72" y1="425" x2="478" y2="425" stroke="#4F39F6" stroke-width="5" stroke-linecap="round"/>
 
-  <text x="1080" y="605" font-family="${preferredFont}" font-size="26" font-weight="500" fill="#2350D9" text-anchor="end">jumpmade.com</text>
+  <text x="72" y="570" font-family="${preferredFont}" font-size="32" font-weight="700" fill="#0A0A0B" letter-spacing="-0.8">Jumpmade</text>
+  <rect x="198" y="552" width="8" height="8" fill="#4F39F6"/>
+
+  <text x="1128" y="570" font-family="${preferredFont}" font-size="22" font-weight="500" fill="#52525B" text-anchor="end">jumpmade.com</text>
 </svg>
 `;
 

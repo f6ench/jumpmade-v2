@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeAhead -- Stop Losing Jobs to Whoever Replies First</title>
+    <meta name="description" content="Every lead responded to in under 60 seconds. Done-for-you lead response for UK tradespeople. Live same day. Guaranteed to pay for itself.">
+    <meta property="og:title" content="TradeAhead -- Stop Losing Jobs to Whoever Replies First">
+    <meta property="og:description" content="The done-for-you system that responds to every lead in under 60 seconds, chases every quote, and books jobs automatically.">
+    <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="MY2P9tD5jFClq_fgygrQmWzDDLr9v7SEtRx3Jr6nHwE" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9889;</text></svg>">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-58G1PBH6CR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-58G1PBH6CR');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#1E3A5F', light: '#2A4D7A', dark: '#152B47', 50: '#EEF2F7' },
+                        amber: { DEFAULT: '#F59E0B', hover: '#D97706', light: '#FEF3C7', 50: '#FFFBEB' },
+                        slate: { DEFAULT: '#64748B', light: '#94A3B8' },
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js');</script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+        .js .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1); }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+        .accordion-content.open { max-height: 500px; }
+        .quiz-step { display: none; }
+        .quiz-step.active { display: block; }
+        .hero-glow { background: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(30,58,95,0.08) 0%, transparent 70%); }
+        .card-elevated { box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 24px rgba(0,0,0,0.06); }
+        .card-elevated:hover { box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 12px 32px rgba(0,0,0,0.1); }
+        .pricing-glow { box-shadow: 0 0 0 1px rgba(245,158,11,0.2), 0 8px 40px rgba(245,158,11,0.12), 0 20px 60px rgba(30,58,95,0.08); }
+        .btn-primary { background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); transition: all 0.2s ease; }
+        .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(245,158,11,0.35); }
+        .section-divider { background: linear-gradient(90deg, transparent 0%, #E2E8F0 50%, transparent 100%); height: 1px; }
+        .stat-gradient { background: linear-gradient(135deg, #1E3A5F 0%, #2A4D7A 100%); }
+        .platform-logo { filter: grayscale(100%) opacity(0.5); transition: all 0.3s ease; cursor: default; }
+        .platform-logo:hover { filter: none; opacity: 1; }
+    </style>
+    <!-- TrustBox script: uncomment when Trustpilot widget is ready -->
+    <!-- <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script> -->
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Nav -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-b border-gray-100/80 z-50">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-[72px]">
+                <a href="#" class="text-2xl font-extrabold text-navy tracking-tight">Trade<span class="text-amber">Ahead</span></a>
+                <div class="hidden md:flex items-center gap-10">
+                    <a href="#how-it-works" class="text-[15px] font-medium text-slate hover:text-navy transition-colors">How It Works</a>
+                    <a href="#pricing" class="text-[15px] font-medium text-slate hover:text-navy transition-colors">Pricing</a>
+                    <a href="#faq" class="text-[15px] font-medium text-slate hover:text-navy transition-colors">FAQ</a>
+                </div>
+                <a href="#booking" class="btn-primary text-white font-semibold text-sm px-6 py-2.5 rounded-full">Check Your Area</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-36 pb-24 sm:pt-44 sm:pb-32 overflow-hidden">
+        <div class="hero-glow absolute inset-0"></div>
+        <!-- Decorative dots -->
+        <div class="absolute top-24 right-[10%] w-72 h-72 bg-amber/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-[5%] w-96 h-96 bg-navy/5 rounded-full blur-3xl"></div>
+
+        <div class="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 bg-navy-50 text-navy text-sm font-semibold px-4 py-2 rounded-full mb-8">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                One trade per postcode -- limited availability
+            </div>
+
+            <h1 class="text-[2.75rem] sm:text-6xl lg:text-7xl font-extrabold text-navy leading-[1.08] tracking-tight">
+                Stop Losing Jobs<br>to Whoever Replies First
+            </h1>
+            <p class="mt-8 text-lg sm:text-xl text-slate max-w-2xl mx-auto leading-relaxed">
+                The done-for-you system that responds to every lead in under 60 seconds, chases every quote, and books jobs automatically -- live same day.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#booking" class="btn-primary text-white font-bold text-lg px-10 py-4 rounded-full w-full sm:w-auto">
+                    Book Your Free Revenue Leak Audit
+                </a>
+                <a href="#how-it-works" class="text-navy font-semibold text-lg hover:text-amber transition-colors flex items-center gap-1">
+                    See How It Works
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/></svg>
+                </a>
+            </div>
+
+            <!-- Trust badges -->
+            <div class="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12">
+                <div class="flex items-center gap-3 text-sm text-slate">
+                    <div class="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                    </div>
+                    <span class="font-medium">One trade per postcode</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate">
+                    <div class="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <span class="font-medium">60-day money-back guarantee</span>
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate">
+                    <div class="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                    </div>
+                    <span class="font-medium">Live same day</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats bar -->
+    <section class="py-0">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="stat-gradient rounded-2xl p-8 sm:p-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center text-white">
+                <div class="fade-in">
+                    <p class="text-4xl sm:text-5xl font-extrabold">78%</p>
+                    <p class="mt-2 text-sm text-white/70 font-medium">of customers book the first responder</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-4xl sm:text-5xl font-extrabold">60%</p>
+                    <p class="mt-2 text-sm text-white/70 font-medium">of quotes die from zero follow-up</p>
+                </div>
+                <div class="fade-in">
+                    <p class="text-4xl sm:text-5xl font-extrabold">40%</p>
+                    <p class="mt-2 text-sm text-white/70 font-medium">of calls missed while on a job</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Integrations -->
+    <section class="py-14 sm:py-16 bg-gray-50/60">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <p class="text-center text-sm font-semibold text-slate tracking-wide mb-10 fade-in">Works with the platforms you already use</p>
+            <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+                <!-- Checkatrade -->
+                <div class="platform-logo fade-in" title="Checkatrade">
+                    <svg width="140" height="32" viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="28" height="28" rx="6" y="2" fill="#00B67A"/>
+                        <path d="M8 15l4 4 8-8" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <text x="34" y="22" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="15" fill="#1E3A5F">checkatrade</text>
+                    </svg>
+                </div>
+                <!-- MyBuilder -->
+                <div class="platform-logo fade-in" title="MyBuilder">
+                    <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="22" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="16" fill="#E4002B">My</text>
+                        <text x="28" y="22" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="16" fill="#1E3A5F">Builder</text>
+                    </svg>
+                </div>
+                <!-- TrustATrader -->
+                <div class="platform-logo fade-in" title="TrustATrader">
+                    <svg width="130" height="32" viewBox="0 0 130 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="22" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="15" fill="#1A3C6E">TrustATrader</text>
+                        <rect x="0" y="26" width="108" height="3" rx="1.5" fill="#F59E0B"/>
+                    </svg>
+                </div>
+                <!-- Rated People -->
+                <div class="platform-logo fade-in" title="Rated People">
+                    <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="14" r="10" fill="#FF6B00"/>
+                        <path d="M12 8l2 4 4.5.5-3.3 3 .8 4.5L12 18l-4 2 .8-4.5-3.3-3L10 12z" fill="white"/>
+                        <text x="28" y="20" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="13" fill="#FF6B00">Rated</text>
+                        <text x="70" y="20" font-family="Plus Jakarta Sans, sans-serif" font-weight="400" font-size="13" fill="#333">People</text>
+                    </svg>
+                </div>
+                <!-- Bark -->
+                <div class="platform-logo fade-in" title="Bark">
+                    <svg width="70" height="32" viewBox="0 0 70 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="23" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="20" fill="#00C389">bark</text>
+                    </svg>
+                </div>
+                <!-- MyJobQuote -->
+                <div class="platform-logo fade-in" title="MyJobQuote">
+                    <svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="22" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="14" fill="#2563EB">MyJobQuote</text>
+                    </svg>
+                </div>
+                <!-- Google -->
+                <div class="platform-logo fade-in" title="Google">
+                    <svg width="80" height="32" viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="23" font-family="Plus Jakarta Sans, sans-serif" font-weight="700" font-size="18">
+                            <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section: The 4 Revenue Leaks -->
+    <section class="py-24 sm:py-32">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">The Problem</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">The 4 Revenue Leaks<br class="hidden sm:block"> Killing Your Business</h2>
+                <p class="mt-5 text-slate text-lg max-w-xl mx-auto">You don't need more leads. You need to stop losing the ones you already get.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bg-white rounded-2xl p-7 card-elevated transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-7 h-7 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-lg">Slow Response</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">The first tradesperson to respond wins 78% of jobs. If you're replying in 30 minutes, you've already lost.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-7 card-elevated transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-7 h-7 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m6 4.125l2.25 2.25m0 0l2.25 2.25M12 13.875l2.25-2.25M12 13.875l-2.25 2.25M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-lg">No Follow-Up</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">60% of quotes die from zero follow-up. You send a price, then nothing. The customer moves on.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-7 card-elevated transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-7 h-7 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-lg">No System</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">Leads in texts, quotes on WhatsApp, invoices in email. Nothing connects. Things fall through the cracks.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-7 card-elevated transition-all duration-300 border border-gray-100 fade-in">
+                    <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-5">
+                        <svg class="w-7 h-7 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-lg">Can't Delegate</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">Everything's in your head. If you stop, it stops. You can't take a day off without losing work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-4xl mx-auto"></div>
+
+    <!-- Solution: What the Revenue Machine Does -->
+    <section class="py-24 sm:py-32">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">The Solution</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">What Your Revenue Machine Does</h2>
+                <p class="mt-5 text-slate text-lg max-w-2xl mx-auto">A second version of yourself that handles everything between someone finding your number and you showing up to do the job.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl p-7 card-elevated border border-gray-100 transition-all duration-300 fade-in group">
+                    <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-amber-light transition-colors">
+                        <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-[17px]">Every lead responded to in under 60 seconds</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">Even when you're on a job, up a ladder, or eating lunch. The system handles it.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-7 card-elevated border border-gray-100 transition-all duration-300 fade-in group">
+                    <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-amber-light transition-colors">
+                        <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-[17px]">Every quote followed up</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">Automatic follow-up at Day 1, Day 3, and Day 7. No lead falls through the cracks.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-7 card-elevated border border-gray-100 transition-all duration-300 fade-in group">
+                    <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-amber-light transition-colors">
+                        <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-[17px]">Every missed call answered and qualified</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">Voice receptionist picks up, qualifies the job, and sends you a summary. No voicemails.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-7 card-elevated border border-gray-100 transition-all duration-300 fade-in group">
+                    <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-amber-light transition-colors">
+                        <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-[17px]">Google reviews requested after every job</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">Automated review requests at the right moment. Build your reputation on autopilot.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-7 card-elevated border border-gray-100 transition-all duration-300 fade-in group">
+                    <div class="w-12 h-12 bg-navy-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-amber-light transition-colors">
+                        <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+                    </div>
+                    <h3 class="font-bold text-navy text-[17px]">Everything on your phone</h3>
+                    <p class="mt-3 text-slate text-[15px] leading-relaxed">Get a notification. Tap accept or reject. That's the whole thing. No laptop needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-24 sm:py-32 bg-gradient-to-b from-gray-50/80 to-white">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">Simple Setup</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">How It Works</h2>
+                <p class="mt-5 text-slate text-lg">Three steps. Fifteen minutes of your time. Live same day.</p>
+            </div>
+            <div class="space-y-6">
+                <div class="flex items-start gap-6 bg-white rounded-2xl p-8 card-elevated border border-gray-100 fade-in">
+                    <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-amber to-amber-hover rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-md">1</div>
+                    <div>
+                        <h3 class="font-bold text-navy text-lg">Book a 15-minute Revenue Leak Audit</h3>
+                        <p class="mt-2 text-slate text-[15px] leading-relaxed">We pull your profile, check your competitors' response times, and show you exactly what you're losing. Free, no obligation.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-6 bg-white rounded-2xl p-8 card-elevated border border-gray-100 fade-in">
+                    <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-amber to-amber-hover rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-md">2</div>
+                    <div>
+                        <h3 class="font-bold text-navy text-lg">We build your system the same day</h3>
+                        <p class="mt-2 text-slate text-[15px] leading-relaxed">One 15-30 minute call to understand your business. Then we build, configure, and test everything. You don't touch it.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-6 bg-white rounded-2xl p-8 card-elevated border border-gray-100 fade-in">
+                    <div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-amber to-amber-hover rounded-2xl flex items-center justify-center text-white font-extrabold text-xl shadow-md">3</div>
+                    <div>
+                        <h3 class="font-bold text-navy text-lg">Leads hit your phone. You tap accept or reject.</h3>
+                        <p class="mt-2 text-slate text-[15px] leading-relaxed">Every lead responded to instantly. Every quote followed up. Every review requested. You just do the work you're good at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Funnel -->
+    <section class="py-24 sm:py-32">
+        <div class="max-w-2xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">Free Calculator</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">How Much Revenue<br>Are You Losing?</h2>
+                <p class="mt-5 text-slate text-lg">Answer 4 quick questions. Takes 30 seconds.</p>
+            </div>
+            <div id="quiz" class="bg-white rounded-3xl p-8 sm:p-10 card-elevated border border-gray-100 fade-in">
+                <!-- Progress -->
+                <div class="mb-10">
+                    <div class="flex justify-between text-xs font-bold text-slate mb-3">
+                        <span id="quiz-progress-text">Question 1 of 4</span>
+                        <span id="quiz-progress-pct">25%</span>
+                    </div>
+                    <div class="w-full bg-gray-100 rounded-full h-2.5">
+                        <div id="quiz-progress-bar" class="bg-gradient-to-r from-amber to-amber-hover h-2.5 rounded-full transition-all duration-500" style="width: 25%"></div>
+                    </div>
+                </div>
+
+                <!-- Step 1: Trade -->
+                <div class="quiz-step active" data-step="1">
+                    <h3 class="text-xl font-bold text-navy mb-6">What trade are you?</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <button onclick="quizSelectTrade(this, 'Plumber')" class="trade-btn border-2 border-gray-200 rounded-xl px-4 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all">Plumber</button>
+                        <button onclick="quizSelectTrade(this, 'Electrician')" class="trade-btn border-2 border-gray-200 rounded-xl px-4 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all">Electrician</button>
+                        <button onclick="quizSelectTrade(this, 'Builder')" class="trade-btn border-2 border-gray-200 rounded-xl px-4 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all">Builder</button>
+                        <button onclick="quizSelectTrade(this, 'Roofer')" class="trade-btn border-2 border-gray-200 rounded-xl px-4 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all">Roofer</button>
+                        <button onclick="quizSelectTrade(this, 'Heating Engineer')" class="trade-btn border-2 border-gray-200 rounded-xl px-4 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all">Heating Engineer</button>
+                        <button onclick="quizSelectTrade(this, 'Other')" class="trade-btn border-2 border-gray-200 rounded-xl px-4 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all">Other</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Leads per month -->
+                <div class="quiz-step" data-step="2">
+                    <h3 class="text-xl font-bold text-navy mb-6">How many leads do you get per month?</h3>
+                    <div class="mt-8 px-2">
+                        <input type="range" id="quiz-leads" min="5" max="100" value="20" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-amber">
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-xs text-slate">5</span>
+                            <span class="text-3xl font-extrabold text-navy" id="quiz-leads-val">20</span>
+                            <span class="text-xs text-slate">100+</span>
+                        </div>
+                    </div>
+                    <button onclick="quizNext(3)" class="mt-10 w-full btn-primary text-white font-bold py-4 rounded-xl text-lg">Next</button>
+                </div>
+
+                <!-- Step 3: Average job value -->
+                <div class="quiz-step" data-step="3">
+                    <h3 class="text-xl font-bold text-navy mb-6">What's your average job value?</h3>
+                    <div class="mt-8 px-2">
+                        <input type="range" id="quiz-jobval" min="100" max="2000" step="50" value="450" class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-amber">
+                        <div class="flex justify-between items-center mt-4">
+                            <span class="text-xs text-slate">100</span>
+                            <span class="text-3xl font-extrabold text-navy" id="quiz-jobval-val">450</span>
+                            <span class="text-xs text-slate">2,000+</span>
+                        </div>
+                    </div>
+                    <button onclick="quizNext(4)" class="mt-10 w-full btn-primary text-white font-bold py-4 rounded-xl text-lg">Next</button>
+                </div>
+
+                <!-- Step 4: Response time -->
+                <div class="quiz-step" data-step="4">
+                    <h3 class="text-xl font-bold text-navy mb-6">How quickly do you usually respond to new leads?</h3>
+                    <div class="grid grid-cols-1 gap-3">
+                        <button onclick="quizSelectResponse(this, 5)" class="response-btn border-2 border-gray-200 rounded-xl px-5 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all text-left">Under 5 minutes</button>
+                        <button onclick="quizSelectResponse(this, 15)" class="response-btn border-2 border-gray-200 rounded-xl px-5 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all text-left">5-30 minutes</button>
+                        <button onclick="quizSelectResponse(this, 45)" class="response-btn border-2 border-gray-200 rounded-xl px-5 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all text-left">30-60 minutes</button>
+                        <button onclick="quizSelectResponse(this, 90)" class="response-btn border-2 border-gray-200 rounded-xl px-5 py-4 text-sm font-semibold text-gray-700 hover:border-amber hover:bg-amber-50 transition-all text-left">Over an hour</button>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="quiz-step" data-step="results">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-8 h-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/></svg>
+                        </div>
+                        <p class="text-sm font-bold text-red-500 uppercase tracking-widest mb-2">Estimated Annual Loss</p>
+                        <p class="text-5xl sm:text-6xl font-extrabold text-red-600" id="quiz-result-annual">--</p>
+
+                        <div class="mt-8 bg-gray-50 rounded-2xl p-6 text-left space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-slate">Leads per month</span>
+                                <span class="text-sm font-bold text-navy" id="quiz-result-leads">--</span>
+                            </div>
+                            <div class="h-px bg-gray-200"></div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-slate">Lost to slow response (est.)</span>
+                                <span class="text-sm font-bold text-red-600" id="quiz-result-lost">--</span>
+                            </div>
+                            <div class="h-px bg-gray-200"></div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-slate">At your average job value</span>
+                                <span class="text-sm font-bold text-navy" id="quiz-result-jobval">--</span>
+                            </div>
+                            <div class="h-px bg-gray-200"></div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-slate">With 60-second response</span>
+                                <span class="text-sm font-bold text-green-600" id="quiz-result-recovered">--</span>
+                            </div>
+                        </div>
+
+                        <p class="mt-8 text-slate text-[15px]">Want the exact numbers for your business?</p>
+                        <a href="#booking" class="mt-4 block w-full btn-primary text-white font-bold py-4 rounded-xl text-lg">Book Your Free Audit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 sm:py-32 bg-gradient-to-b from-gray-50/80 to-white">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">Pricing</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">Simple, Transparent Pricing</h2>
+                <p class="mt-5 text-slate text-lg">One extra job per month covers the entire fee.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <!-- Tier 1: Solo Tradespeople -->
+                <div class="bg-white rounded-3xl p-8 sm:p-10 card-elevated border border-gray-200 fade-in">
+                    <div class="text-center">
+                        <div class="inline-flex items-center gap-2 bg-navy-50 text-navy font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6">
+                            Solo Tradespeople
+                        </div>
+                        <div class="flex items-baseline justify-center gap-3">
+                            <span class="text-lg text-slate line-through">300</span>
+                            <span class="text-5xl font-extrabold text-navy">150</span>
+                            <span class="text-slate font-medium">setup</span>
+                        </div>
+                        <p class="mt-2 text-lg text-slate">+ <span class="font-extrabold text-navy">150</span>/month</p>
+                    </div>
+
+                    <div class="mt-8 space-y-3">
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">AI Sales Rep -- 60s lead response</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">AI Receptionist -- every missed call answered</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">Follow-Up Engine (Day 1, 3, 7)</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">Command Centre (mobile CRM)</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">Google review automation</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-6 border-t border-gray-100">
+                        <p class="text-xs font-bold text-amber uppercase tracking-widest mb-3">Bonuses</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <span class="text-[13px] text-gray-600">Competitor Speed Report</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <span class="text-[13px] text-gray-600">Google Review Accelerator</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <span class="text-[13px] text-gray-600">First 5 Reviews Done For You</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 bg-green-50 rounded-xl p-4 text-center border border-green-100">
+                        <p class="font-bold text-green-800 text-sm">60-day money-back guarantee</p>
+                    </div>
+
+                    <a href="#booking" class="mt-6 block w-full btn-primary text-white font-bold text-center py-4 rounded-xl text-[15px]">
+                        Check Your Area
+                    </a>
+
+                    <p class="mt-4 text-center text-xs text-slate">3-month minimum. One trade per postcode.</p>
+                </div>
+
+                <!-- Tier 2: Growing Businesses -->
+                <div class="relative bg-white rounded-3xl p-8 sm:p-10 pricing-glow border border-amber/20 fade-in">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber to-amber-hover text-white text-xs font-bold uppercase tracking-widest px-5 py-1.5 rounded-full shadow-md">Most Popular</div>
+                    <div class="text-center">
+                        <div class="inline-flex items-center gap-2 bg-amber-50 text-amber font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6">
+                            <span class="w-1.5 h-1.5 bg-amber rounded-full"></span>
+                            Growing Businesses
+                        </div>
+                        <div class="flex items-baseline justify-center gap-3">
+                            <span class="text-lg text-slate line-through">1,500</span>
+                            <span class="text-5xl font-extrabold text-navy">750</span>
+                            <span class="text-slate font-medium">setup</span>
+                        </div>
+                        <p class="mt-2 text-lg text-slate">+ <span class="font-extrabold text-navy">300</span>/month</p>
+                    </div>
+
+                    <div class="mt-8 space-y-3">
+                        <p class="text-xs font-bold text-navy uppercase tracking-widest mb-2">Everything in Solo, plus:</p>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">Custom Strategy Roadmap</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">Weekly Optimization Looms</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">White Glove WhatsApp Support</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3 h-3 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[14px] text-gray-700">Multi-user team access</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 pt-6 border-t border-gray-100">
+                        <p class="text-xs font-bold text-amber uppercase tracking-widest mb-3">All Solo bonuses, plus:</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-amber flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                                <span class="text-[13px] text-gray-600">Competitor Blind Spot Map</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 bg-green-50 rounded-xl p-4 text-center border border-green-100">
+                        <p class="font-bold text-green-800 text-sm">90-day money-back guarantee</p>
+                    </div>
+
+                    <a href="#booking" class="mt-6 block w-full btn-primary text-white font-bold text-center py-4 rounded-xl text-[15px]">
+                        Book Your Revenue Leak Audit
+                    </a>
+
+                    <p class="mt-4 text-center text-xs text-slate">3-month minimum. One trade per postcode.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Guarantee -->
+    <section class="py-16 sm:py-20">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
+            <div class="stat-gradient rounded-3xl p-10 sm:p-14 text-center fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">Our Guarantee</p>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white leading-snug">It pays for itself in 60 days<br>or you get a full refund.</h2>
+                <p class="mt-6 text-white/80 text-lg leading-relaxed max-w-xl mx-auto">You keep the system -- the CRM, the AI, the automations. All yours. We're betting on our own work.</p>
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white/10 rounded-2xl p-6">
+                        <p class="text-4xl font-extrabold text-amber">47 min</p>
+                        <p class="text-white/60 text-sm mt-2">Your competitors' average response time</p>
+                    </div>
+                    <div class="bg-white/10 rounded-2xl p-6">
+                        <p class="text-4xl font-extrabold text-amber">11 sec</p>
+                        <p class="text-white/60 text-sm mt-2">Your response time with TradeAhead</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before vs After -->
+    <section class="py-24 sm:py-32">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">The Difference</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">Before vs After</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 fade-in">
+                <div class="bg-red-50/70 rounded-3xl p-8 sm:p-10 border border-red-100/50">
+                    <h3 class="font-extrabold text-red-700 text-lg mb-8">Before TradeAhead</h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                            </div>
+                            <span class="text-[15px] text-red-800">Respond to leads in 30-60 minutes</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                            </div>
+                            <span class="text-[15px] text-red-800">Miss calls while on a job</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                            </div>
+                            <span class="text-[15px] text-red-800">Send a quote and never follow up</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                            </div>
+                            <span class="text-[15px] text-red-800">Ask for reviews and forget</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+                            </div>
+                            <span class="text-[15px] text-red-800">Lose 3-6 jobs a month to faster competitors</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-green-50/70 rounded-3xl p-8 sm:p-10 border border-green-100/50">
+                    <h3 class="font-extrabold text-green-700 text-lg mb-8">After TradeAhead</h3>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[15px] text-green-800">Every lead responded to in 60 seconds</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[15px] text-green-800">Every call answered and qualified</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[15px] text-green-800">Automated follow-up on every quote</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[15px] text-green-800">Reviews requested on autopilot</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-3.5 h-3.5 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            </div>
+                            <span class="text-[15px] text-green-800">Win 3-6 extra jobs per month</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Case Study: One Plumbing -->
+            <div class="mt-16 max-w-3xl mx-auto fade-in">
+                <div class="relative bg-gradient-to-br from-navy to-navy-dark rounded-3xl p-10 sm:p-14 overflow-hidden">
+                    <!-- Decorative quote mark -->
+                    <svg class="absolute top-6 left-8 w-16 h-16 text-amber opacity-20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609L9.978 5.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z"/></svg>
+
+                    <!-- Stars -->
+                    <div class="flex gap-1 mb-6">
+                        <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-amber" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-6 relative z-10">From losing leads to claiming them in 10 seconds</h3>
+
+                    <blockquote class="text-white/90 text-lg leading-relaxed mb-8 relative z-10">
+                        "I used to lose jobs every week because I couldn't get to my phone fast enough. Now the system handles it before I even know there's a lead."
+                    </blockquote>
+
+                    <p class="text-white/70 text-sm leading-relaxed mb-8 relative z-10">
+                        A solo plumber in the West Midlands was losing 3-4 jobs a week because other tradespeople on Checkatrade were responding faster. By the time he checked his phone between jobs, the customer had already booked someone else. Now his system claims every lead within 10 seconds, qualifies the customer automatically, and sends him a summary to accept or reject from his phone. He went from missing half his leads to capturing every single one.
+                    </p>
+
+                    <!-- Stats row -->
+                    <div class="grid grid-cols-3 gap-6 mb-10 relative z-10">
+                        <div class="text-center">
+                            <p class="text-3xl sm:text-4xl font-extrabold text-amber">10s</p>
+                            <p class="text-white/60 text-xs mt-1 uppercase tracking-wider">Response time</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl sm:text-4xl font-extrabold text-amber">100%</p>
+                            <p class="text-white/60 text-xs mt-1 uppercase tracking-wider">Leads captured</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl sm:text-4xl font-extrabold text-amber">3-4</p>
+                            <p class="text-white/60 text-xs mt-1 uppercase tracking-wider">Extra jobs/week</p>
+                        </div>
+                    </div>
+
+                    <!-- Attribution -->
+                    <div class="flex items-center gap-4 relative z-10 pt-8 border-t border-white/10">
+                        <div class="w-14 h-14 bg-navy-light rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white/60" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-sm">J., Solo Plumber</p>
+                            <p class="text-white/50 text-xs">West Midlands</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trustpilot: widget commented out until account propagates, fallback shown instead -->
+            <!--
+            <div class="mt-8 flex justify-center fade-in">
+                <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="69bb98b90f5814432780c616" data-style-height="24px" data-style-width="250px" data-theme="light" data-min-review-count="0" data-without-reviews-preferred-string-id="1" data-style-alignment="center">
+                    <a href="https://uk.trustpilot.com/review/tradeahead.co.uk" target="_blank" rel="noopener">Trustpilot</a>
+                </div>
+            </div>
+            -->
+            <div class="mt-8 flex justify-center fade-in">
+                <a href="https://uk.trustpilot.com/review/tradeahead.co.uk" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm text-slate hover:text-navy transition-colors">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#00B67A"/></svg>
+                    Rated on Trustpilot
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-4xl mx-auto"></div>
+
+    <!-- Blog / Newsletter -->
+    <section class="py-24 sm:py-32">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">Resources</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">Latest Insights</h2>
+                <p class="mt-5 text-slate text-lg">Practical advice for tradespeople who want to win more work.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <a href="blog/why-speed-wins.html" class="bg-white rounded-2xl overflow-hidden card-elevated border border-gray-100 transition-all duration-300 fade-in group">
+                    <div class="h-1.5 bg-gradient-to-r from-amber to-amber-hover"></div>
+                    <div class="p-7">
+                        <p class="text-xs font-bold text-amber uppercase tracking-widest">Lead Response</p>
+                        <h3 class="mt-3 text-[17px] font-bold text-navy group-hover:text-amber transition-colors leading-snug">Why the First Tradesperson to Respond Wins 78% of Jobs</h3>
+                        <p class="mt-3 text-sm text-slate leading-relaxed">The data behind speed-to-lead and what it means for your business.</p>
+                        <span class="inline-block mt-4 text-sm font-semibold text-amber">Read more &rarr;</span>
+                    </div>
+                </a>
+                <a href="blog/hidden-cost-slow-response.html" class="bg-white rounded-2xl overflow-hidden card-elevated border border-gray-100 transition-all duration-300 fade-in group">
+                    <div class="h-1.5 bg-gradient-to-r from-amber to-amber-hover"></div>
+                    <div class="p-7">
+                        <p class="text-xs font-bold text-amber uppercase tracking-widest">Revenue Leaks</p>
+                        <h3 class="mt-3 text-[17px] font-bold text-navy group-hover:text-amber transition-colors leading-snug">The Hidden Cost of Slow Lead Response</h3>
+                        <p class="mt-3 text-sm text-slate leading-relaxed">How responding 30 minutes late could be costing you 16K+ per year.</p>
+                        <span class="inline-block mt-4 text-sm font-semibold text-amber">Read more &rarr;</span>
+                    </div>
+                </a>
+                <a href="blog/what-competitors-do-differently.html" class="bg-white rounded-2xl overflow-hidden card-elevated border border-gray-100 transition-all duration-300 fade-in group">
+                    <div class="h-1.5 bg-gradient-to-r from-amber to-amber-hover"></div>
+                    <div class="p-7">
+                        <p class="text-xs font-bold text-amber uppercase tracking-widest">Competition</p>
+                        <h3 class="mt-3 text-[17px] font-bold text-navy group-hover:text-amber transition-colors leading-snug">What Your Competitors Are Doing Differently</h3>
+                        <p class="mt-3 text-sm text-slate leading-relaxed">The tradespeople winning the most work aren't better -- they're faster.</p>
+                        <span class="inline-block mt-4 text-sm font-semibold text-amber">Read more &rarr;</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Newsletter signup -->
+            <div class="max-w-lg mx-auto bg-white rounded-2xl p-8 card-elevated border border-gray-100 text-center fade-in">
+                <h3 class="text-lg font-bold text-navy">Get practical tips in your inbox</h3>
+                <p class="text-sm text-slate mt-2">No spam. Just stuff that helps you win more work.</p>
+                <form id="newsletter-form" class="mt-6 flex flex-col sm:flex-row gap-3">
+                    <input type="text" name="name" placeholder="Your name" required class="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20 transition-all">
+                    <input type="email" name="email" placeholder="Your email" required class="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20 transition-all">
+                    <button type="submit" class="btn-primary text-white font-semibold px-6 py-3 rounded-xl text-sm whitespace-nowrap">Subscribe</button>
+                </form>
+                <p id="newsletter-success" class="hidden mt-4 text-sm text-green-600 font-semibold">You're in. We'll be in touch.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Calendar -->
+    <section id="booking" class="py-24 sm:py-32 bg-gradient-to-b from-gray-50/80 to-white">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">Book Now</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">Check If Your Postcode<br>Area Is Available</h2>
+                <p class="mt-5 text-slate text-lg">One trade per area. Book your free 15-minute Revenue Leak Audit.</p>
+            </div>
+            <div class="bg-white rounded-3xl p-5 card-elevated border border-gray-100 fade-in">
+                <iframe src="https://api.leadconnectorhq.com/widget/booking/rzwKze2j7JZBzcgxKhec" style="width:100%; height:700px; border:none; border-radius:16px;" scrolling="no" title="Book your audit"></iframe>
+            </div>
+            <p class="mt-8 text-center text-sm text-slate">
+                Prefer to message? <a href="https://wa.me/447443649259" class="text-navy font-semibold hover:text-amber transition-colors">WhatsApp me directly</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 sm:py-32">
+        <div class="max-w-2xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <p class="text-sm font-bold text-amber uppercase tracking-widest mb-4">FAQ</p>
+                <h2 class="text-3xl sm:text-[2.75rem] font-extrabold text-navy leading-tight">Common Questions</h2>
+            </div>
+            <div class="space-y-3 fade-in">
+                <div class="bg-white rounded-2xl border border-gray-100 card-elevated">
+                    <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-navy text-[15px] pr-4">Is 150/mo worth it?</span>
+                        <svg class="w-5 h-5 text-slate transition-transform duration-300 accordion-icon flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-[15px] text-slate leading-relaxed">One extra job at 450 covers the fee three times over. That's a 3x return from a single booking. If it doesn't pay for itself in 60 days, you get a full refund.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl border border-gray-100 card-elevated">
+                    <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-navy text-[15px] pr-4">I'm not tech-savvy</span>
+                        <svg class="w-5 h-5 text-slate transition-transform duration-300 accordion-icon flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-[15px] text-slate leading-relaxed">You get a phone notification. You tap accept or reject. That's the whole thing. We build, install, and run everything. You just do the work you're good at.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl border border-gray-100 card-elevated">
+                    <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-navy text-[15px] pr-4">How is this different from a marketing agency?</span>
+                        <svg class="w-5 h-5 text-slate transition-transform duration-300 accordion-icon flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-[15px] text-slate leading-relaxed">We don't run ads or build websites. We don't create new leads. We make sure you actually win the leads you already get -- by responding faster, following up consistently, and never missing a call. Like a boiler: you don't learn how it works, you just see the results.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl border border-gray-100 card-elevated">
+                    <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-navy text-[15px] pr-4">What if it doesn't work?</span>
+                        <svg class="w-5 h-5 text-slate transition-transform duration-300 accordion-icon flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-[15px] text-slate leading-relaxed">60-day money-back guarantee. If the system doesn't pay for itself, you get a full refund. We're betting on our own work. The risk is entirely on us.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl border border-gray-100 card-elevated">
+                    <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-navy text-[15px] pr-4">What happens after 3 months?</span>
+                        <svg class="w-5 h-5 text-slate transition-transform duration-300 accordion-icon flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-[15px] text-slate leading-relaxed">After the 3-month minimum, it's month-to-month. Stay as long as you want. Most clients stay because the system is making them money. If you leave, you keep everything -- the CRM, the automations, all of it.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl border border-gray-100 card-elevated">
+                    <button onclick="toggleAccordion(this)" class="w-full flex items-center justify-between p-6 text-left">
+                        <span class="font-bold text-navy text-[15px] pr-4">Do I need to change how I work?</span>
+                        <svg class="w-5 h-5 text-slate transition-transform duration-300 accordion-icon flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-[15px] text-slate leading-relaxed">No. You keep doing your job exactly the same way. The system works around you. The only change is you'll get more phone notifications with jobs to accept or reject. Everything else is handled.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-navy">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div>
+                    <p class="text-2xl font-extrabold tracking-tight text-white">Trade<span class="text-amber">Ahead</span></p>
+                    <p class="text-sm text-gray-400 mt-2">Built by Jumpmade</p>
+                </div>
+                <div class="flex items-center gap-8 text-sm text-gray-400">
+                    <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+    // Scroll animations
+    const fadeEls = document.querySelectorAll('.fade-in');
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+        fadeEls.forEach(el => observer.observe(el));
+        // Fallback: reveal all after 3s for crawlers/bots that run JS but don't scroll
+        setTimeout(() => fadeEls.forEach(el => el.classList.add('visible')), 3000);
+    } else {
+        // No IntersectionObserver support: show everything immediately
+        fadeEls.forEach(el => el.classList.add('visible'));
+    }
+
+    // FAQ Accordion
+    function toggleAccordion(btn) {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.accordion-icon');
+        const isOpen = content.classList.contains('open');
+        document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.accordion-icon').forEach(i => i.style.transform = '');
+        if (!isOpen) {
+            content.classList.add('open');
+            icon.style.transform = 'rotate(180deg)';
+        }
+    }
+
+    // Quiz
+    const quizData = { trade: '', leads: 20, jobVal: 450, responseMin: 45 };
+
+    document.getElementById('quiz-leads').addEventListener('input', function() {
+        quizData.leads = parseInt(this.value);
+        document.getElementById('quiz-leads-val').textContent = this.value;
+    });
+    document.getElementById('quiz-jobval').addEventListener('input', function() {
+        quizData.jobVal = parseInt(this.value);
+        document.getElementById('quiz-jobval-val').textContent = this.value >= 2000 ? '2,000+' : this.value;
+    });
+
+    function quizSelectTrade(btn, trade) {
+        quizData.trade = trade;
+        document.querySelectorAll('.trade-btn').forEach(b => { b.classList.remove('border-amber', 'bg-amber-50'); b.classList.add('border-gray-200'); });
+        btn.classList.remove('border-gray-200');
+        btn.classList.add('border-amber', 'bg-amber-50');
+        setTimeout(() => quizNext(2), 300);
+    }
+
+    function quizSelectResponse(btn, minutes) {
+        quizData.responseMin = minutes;
+        document.querySelectorAll('.response-btn').forEach(b => { b.classList.remove('border-amber', 'bg-amber-50'); b.classList.add('border-gray-200'); });
+        btn.classList.remove('border-gray-200');
+        btn.classList.add('border-amber', 'bg-amber-50');
+        setTimeout(() => quizShowResults(), 300);
+    }
+
+    function quizNext(step) {
+        document.querySelectorAll('.quiz-step').forEach(s => s.classList.remove('active'));
+        document.querySelector('[data-step="' + step + '"]').classList.add('active');
+        const pct = step === 'results' ? 100 : (step / 4) * 100;
+        document.getElementById('quiz-progress-bar').style.width = pct + '%';
+        document.getElementById('quiz-progress-text').textContent = step === 'results' ? 'Results' : 'Question ' + step + ' of 4';
+        document.getElementById('quiz-progress-pct').textContent = Math.round(pct) + '%';
+    }
+
+    function quizShowResults() {
+        const winRates = { 5: 0.60, 15: 0.35, 45: 0.20, 90: 0.10 };
+        const currentWinRate = winRates[quizData.responseMin] || 0.20;
+        const fastWinRate = 0.78;
+        const monthlyLeads = quizData.leads;
+        const currentWins = Math.round(monthlyLeads * currentWinRate);
+        const fastWins = Math.round(monthlyLeads * fastWinRate);
+        const lostPerMonth = fastWins - currentWins;
+        const lostAnnualRevenue = lostPerMonth * quizData.jobVal * 12;
+        const recoveredMonthly = lostPerMonth * quizData.jobVal;
+
+        document.getElementById('quiz-result-annual').textContent = '\u00A3' + lostAnnualRevenue.toLocaleString();
+        document.getElementById('quiz-result-leads').textContent = monthlyLeads + '/month';
+        document.getElementById('quiz-result-lost').textContent = lostPerMonth + ' jobs/month';
+        document.getElementById('quiz-result-jobval').textContent = '\u00A3' + quizData.jobVal;
+        document.getElementById('quiz-result-recovered').textContent = '+\u00A3' + recoveredMonthly.toLocaleString() + '/month recovered';
+        quizNext('results');
+    }
+
+    // Newsletter form
+    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const name = form.querySelector('[name="name"]').value;
+        const email = form.querySelector('[name="email"]').value;
+        fetch('https://services.leadconnectorhq.com/hooks/JvAapK9OeuY8uvFELi82/webhook/newsletter', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name: name, email: email, tags: ['newsletter'] })
+        }).catch(() => {});
+        form.style.display = 'none';
+        document.getElementById('newsletter-success').classList.remove('hidden');
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+    });
+    </script>
+</body>
+</html>

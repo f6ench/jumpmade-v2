@@ -36,3 +36,9 @@ credentials.json
 *.pptx.tmp
 *.xlsx.tmp
 playwright-state/
+.playwright-mcp/
+test-results/
+
+# Session debris
+snapshot-*.md
+*.patch
