@@ -13,9 +13,6 @@
 
 ## Hero (above the fold)
 
-### Hero pill (above the kicker)
-*Live in 7 days from signing*
-
 ### Section kicker
 *01 — Jumpmade for UK plumbers*
 
@@ -25,10 +22,10 @@
 (*chasing leads* renders in indigo italic with an animated SVG underline drawn on page load.)
 
 ### Sub-headline
-We reply to every lead on Checkatrade, MyBuilder, Bark, Rated People, Google and Facebook — within 60 seconds. Your quote lands first. The job gets booked. You do the work.
+We reply to every lead on Checkatrade, MyBuilder, Bark, Rated People, Google, Facebook… — within 60 seconds. Your quote lands first. The job gets booked. You do the work.
 
 ### Primary CTA button
-**[ WhatsApp me — 15-minute fit call ]** → links to `wa.me/447747240979`
+**[ WhatsApp us — 15-minute fit call ]** → links to `wa.me/447747240979`
 
 ### Trust line under the CTA
 *No pressure, no pitch deck.* Or email **josephfrench@jumpmade.com** if you'd rather start there.
@@ -51,7 +48,7 @@ We reply to every lead on Checkatrade, MyBuilder, Bark, Rated People, Google and
 **The first plumber to reply wins the job.**
 
 ### Body
-UK homeowners post a job, get three quotes, and hire the first plumber who gets back to them.
+UK homeowners post a job, get quotes, and hire the first plumber who gets back to them.
 
 If that's not you, it doesn't matter how good your work is. You lost the job before you knew it existed.
 
@@ -68,10 +65,10 @@ The plumbers who stay booked aren't always the best. They're the fastest.
 **You hand us your lead sources. We handle everything until it hits your calendar.**
 
 ### Bullets
-- A lead comes into Checkatrade (or MyBuilder, Bark, Rated People, Google, Facebook)
-- We reply in under 60 seconds — SMS and WhatsApp, in your voice, with your business name
+- A lead comes into Checkatrade (or MyBuilder, Bark, Rated People, Google, Facebook…)
+- We reply in under 60 seconds — SMS and WhatsApp, in your voice, with your business name and tone
 - We qualify the customer (what's wrong, when, postcode, budget range)
-- We book the job straight onto your Google Calendar
+- We book the job straight onto your calendar
 - You get a WhatsApp heads-up: *"Sarah in SW2 — shower repair — Thursday 10am"*
 - You show up, do the work, get paid
 
@@ -80,10 +77,10 @@ You never log into anything. You never touch a dashboard. You carry on doing plu
 
 ---
 
-## Section 4 — What's included / not included
+## Section 4 — What's included
 
 ### Section kicker
-*04 — What's included / not included*
+*04 — What's included*
 
 ### Differentiator callout (full-bleed black card with indigo glow at top of section)
 **Eyebrow:** THE DIFFERENTIATOR
@@ -92,9 +89,9 @@ You never log into anything. You never touch a dashboard. You carry on doing plu
 (*every* renders as the indigo italic accent inside the headline.)
 
 ### Lead response and qualification
-- Lead response on up to 6 platforms (Checkatrade, MyBuilder, Bark, Rated People, Google Lead Form, Facebook Lead Ads — your mix)
+- Lead response on 6+ platforms (Checkatrade, MyBuilder, Bark, Rated People, Google, Facebook… — your mix)
 - AI conversation handles qualification on SMS and WhatsApp
-- Automatic booking onto your Google Calendar
+- Automatic booking onto your calendar
 
 ### Appointments and no-shows
 - Automatic SMS reminders 24 hours, 1 hour, and 5 minutes before each booked job
@@ -110,21 +107,13 @@ You never log into anything. You never touch a dashboard. You carry on doing plu
 - Professional invoice templates with your bank details and sequential numbering
 
 ### Visibility
-- Lead Connector mobile app on your phone — real-time notifications and conversation history
+- We reply in under 60 seconds — SMS and WhatsApp, in your business name and tone
 - Monthly revenue report: leads received, quoted, booked, paid
-- Direct WhatsApp line to me (the founder) for anything that comes up
+- 24/7 support — we're on call for anything that comes up
 
 ### Onboarding
-- Go-live in 7 days from signing — written into the contract
-- First 3 customers only: personalised Loom walkthrough videos of your setup
-
-### Not included
-- Website design or SEO
-- Content marketing or social media
-- Trustpilot / review management
-- General growth consulting outside the scope above
-- Custom software / bespoke workflows
-- Voice AI (we'll add this once the partnership has a year of performance data)
+- Go-live in 7 days from signing — your system custom-built and tested
+- You get personalised setup walkthrough videos
 
 ### Scope callout (indigo-tinted box)
 **We do one thing. We do it well.** No scope creep, no "and also"s, no extra invoices.
@@ -143,7 +132,7 @@ You never log into anything. You never touch a dashboard. You carry on doing plu
 Setup fee refunded. First month refunded. No forms, no arguments. Full stop.
 
 ### Fine print (italic, small, low-contrast)
-Applies when you receive ≥30 lead notifications across your enabled platforms during the 30-day window. Below that, the problem is upstream — we fix your platform coverage first, before the guarantee fires.
+Applies when you receive ≥30 lead notifications across your enabled platforms during the 30-day window.
 
 ---
 
@@ -155,11 +144,8 @@ Applies when you receive ≥30 lead notifications across your enabled platforms 
 ### H2
 **£300 to get started. £250 a month after that.**
 
-### Lead
-Onboarded in 7 days. Live lead response from day one of month one.
-
 ### Body
-At 3 booked jobs a month (our conservative baseline), the partnership pays back roughly £600 in new revenue — twice what you paid. Hit 6 (our guarantee), you're at 4–5× return. Hit 8 (what we're aiming for), you're at 6–8×.
+At 3 booked jobs a month — our conservative baseline — you're already at more than 2× the £250/mo retainer. Hit our 6-job guarantee and you're at 4–5×. Hit our 8-job target and you're at 6–8×.
 
 ### Cost calculation grid (3 cells, indigo result)
 | Conservative baseline | At guarantee (6 jobs) | At target (8 jobs) |
@@ -188,11 +174,6 @@ You're a UK plumber. You're on Checkatrade — maybe MyBuilder, Bark, Rated Peop
 ### Closer
 If that sounds right, this is for you.
 
-### "This is NOT for you if:" sub-section
-- You don't have any lead sources set up yet (Checkatrade / MyBuilder / Bark / etc.) — we handle response, we don't generate leads from scratch
-- You don't have a Google Calendar or a phone you answer
-- You want generic "growth consulting" or SEO services — we don't do those
-
 ---
 
 ## Section 8 — FAQ (8 questions)
@@ -203,26 +184,15 @@ If that sounds right, this is for you.
 **How long does it take to go live?**
 7 days from when you pay. That's written into the contract — if we can't go live in 7 days, month 1 is on us.
 
-**Do I have to change anything about how I already work?**
-No. You keep your Checkatrade profile, your Google Calendar, your phone, your existing customers. We plug in on the response side only.
-
-**What if my diary's already full?**
-We pause lead response when you tell us to. Your Google Calendar is the source of truth. If you're booked up for two weeks, we hold new leads until there's space — or you approve us to push them to a waitlist.
-
-**What about my existing CRM (Tradify / Jobber / whatever I use)?**
-You keep using whatever you use. We don't integrate with it. You'll get a daily summary on WhatsApp of every new booked job — you enter it into your CRM however you normally do.
-
-**Can customers send me photos over text?**
-Yes. We default to WhatsApp for the conversation so photos come through cleanly. If they only have SMS, we switch them to email for any attachments.
+**How long does it take to see results?**
+The system is fully installed within 7–10 days. Most see their first qualified jobs within the first week.
 
 **What counts as a "booked job" for the guarantee?**
-A customer who has agreed a day and time, is on your calendar, and has received a confirmation from us. Not just a quote sent. Not just a conversation started. An actual slot on your calendar with a confirmed customer.
+Not just a quote sent. Not just a conversation started. Not just a slot on your calendar. A booked job means you're on the doorstep — the customer's there, the work is happening.
 
 **What if I want to leave?**
 Month-to-month. No contract lock-in. Cancel with 30 days' notice. Your existing customers stay yours, your profile is yours, your data is yours — we're just the response layer.
 
-**Why the 30-lead condition on the guarantee?**
-Because the mechanism works on volume. If you're in a rural postcode getting 12 leads a month from Checkatrade, no response-layer on earth will book you 6 jobs from that pool. We'll spot it fast — usually in week 1 — and the conversation shifts to fixing your platform coverage, not refunding the guarantee. We're in it with you either way.
 
 ---
 
@@ -240,10 +210,10 @@ The standalone v1 founder note (originally Section 9 in the c1b74bd draft) was m
 **Ready to stop losing jobs to whoever replies fastest?**
 
 ### Body
-Message me on WhatsApp. We'll talk for 15 minutes. If it's a fit, I'll walk you through how we'd set it up. If it's not, we both saved each other an hour.
+Message us on WhatsApp — 15 minutes. If it's a fit, we'll show you exactly how we'd set it up. If it's not, no time wasted on either side.
 
 ### CTA button
-**[ WhatsApp me — 15-minute fit call ]** → links to `wa.me/447747240979`
+**[ WhatsApp us — 15-minute fit call ]** → links to `wa.me/447747240979`
 
 ### Email line
 Or email **josephfrench@jumpmade.com** if you'd rather start there.
