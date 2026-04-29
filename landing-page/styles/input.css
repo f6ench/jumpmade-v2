@@ -78,8 +78,14 @@
 
   @media (min-width: 768px) {
     h1 {
-      font-size: clamp(3rem, 5.5vw, 4.5rem);
+      font-size: clamp(2.75rem, 4.75vw, 4rem);
       letter-spacing: -0.045em;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    h1 {
+      font-size: clamp(3.25rem, 4.5vw, 4.25rem);
     }
   }
 
@@ -209,15 +215,22 @@
   }
 
   .hero-pad {
-    padding-top: 3.5rem;
-    padding-bottom: 4rem;
+    padding-top: 2.75rem;
+    padding-bottom: 3.5rem;
     position: relative;
   }
 
   @media (min-width: 768px) {
     .hero-pad {
-      padding-top: 7rem;
-      padding-bottom: 7.5rem;
+      padding-top: 4rem;
+      padding-bottom: 5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hero-pad {
+      padding-top: 5.5rem;
+      padding-bottom: 6.5rem;
     }
   }
 
@@ -500,6 +513,26 @@
      Hero pill — brand chip above the kicker
      ============================================================ */
 
+  /* Hero meta row — pill + kicker. Mobile: pill above kicker. Desktop: kicker left, pill right. */
+  .hero-meta-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .hero-meta-row {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .hero-meta-row .section-num { order: 1; margin-bottom: 0; }
+    .hero-meta-row .hero-pill { order: 2; margin-bottom: 0; }
+  }
+
   .hero-pill {
     display: inline-flex;
     align-items: center;
@@ -512,7 +545,6 @@
     font-weight: 600;
     letter-spacing: 0.02em;
     color: var(--accent-ink);
-    margin-bottom: 1rem;
   }
 
   .hero-pill::before {
@@ -576,8 +608,8 @@
      ============================================================ */
 
   .stat-row {
-    margin-top: 3rem;
-    padding-top: 2rem;
+    margin-top: 2.25rem;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--border);
     display: grid;
     grid-template-columns: 1fr;
@@ -593,8 +625,8 @@
   @media (min-width: 768px) {
     .stat-row {
       gap: 0;
-      margin-top: 4.5rem;
-      padding-top: 2.5rem;
+      margin-top: 2.75rem;
+      padding-top: 1.75rem;
     }
   }
 
